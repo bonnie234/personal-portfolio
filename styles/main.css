@@ -1,53 +1,202 @@
-header {
-  background: url(../images/background-image.jpg) center / cover;
-  height: 60vh;
-  justify-content: center;
-  text-align: center;
-}
+@import url(http://fonts.googleapis.com/css?family=Muli);
 
 h1 {
-  color: hsla(0, 0%, 100%, 0.9);
-  font-weight: bold;
+  color: #48434C;
+  font: 3.6rem "Muli", sans-serif;
+  font-weight: 900;
 }
 
-.slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 1.6rem;
+h2 {
+  font: 2.4rem/150% "Muli", sans-serif;
+  font-weight: 700;
+  color: #0C3F60;
+  padding-top: 9rem;
 }
 
-main {
-  max-width: 900px;
+h3 {
+  font: 2rem/150% "Muli", sans-serif;
+  font-weight: 500;
+  color: #0C3F60;
 }
 
-.project-description {
-  padding-left: 0;
+h5 {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 700;
+  color: #000508;
 }
 
-.project img {
-  width: 100%;
+h6 {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 700;
+  color: #000508;
 }
 
-
-footer.mdl-mini-footer {
-  bottom: 0;
-  padding: 0.5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+li {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 300;
+  color: #000508;
 }
 
-
-footer.mdl-mini-footer > ul {
-  margin: auto;
+p {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 300;
+  color: #000508;
 }
 
 body {
-  padding-bottom: 5rem;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
+html{
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  padding: 0, 2rem;
+  margin: 0 auto;
+}
+
+.logoname img {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logoname h1 {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.logoname {
+  display: inline;
+  max-width: 40rem;
+  max-height: 11rem;
+  padding: 5px 0;
+}
+
+#firstname {
+  -webkit-text-stroke: .25px #000508;
+	-webkit-text-fill-color: white;
+}
+
+.navbar-link {
+  text-align: center;
+  display: inline;
+  height: 2rem;
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 300;
+  color: #000508;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+}
+
+.home {
+  border-bottom: .5rem solid #57BFAF;
+}
+
+ul#top-navigation li{
+  height: 100%;
+  display: inline;
+}
+
+
+.hero {
+    position: relative;
+    padding: 25px;
+    padding-bottom: 50px;
   }
+
+
+
+.hero .text-block {
+  z-index: 100;
+  position: absolute;
+  width: 50%;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+}
+
+
+main{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 50rem;
+}
+
+main h2 {
+  padding-bottom: 4rem;
+}
+
+
+
+#description {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+
+}
+
+.button {
+  border-radius: 2rem;
+  padding: 1rem 6rem;
+  width: 20rem;
+  font: 1.4rem/150% "Muli", sans-serif;
+  font-weight: 700;
+  color: #000508;
+  border: 1px solid #57BFAF;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #57BFAF;
+  color: #000508;
+}
+
+
+section{
+   height: auto;
+   width: auto;
+   margin: 8.5rem 0;
+   border-top: 3px solid #B9C7D1;
+}
+
+section p {
+  padding-top: 2rem;
+  padding-bottom: 9rem;
+}
+
+
+
+
+
+
+
+footer {
+  bottom: 0;
+  margin: 10rem auto;
+  text-align: center;
+  width: 100%;
+/*  z-index: 1;*/
+}
+
+#connect {
+  color: #57BFAF;
+  padding-bottom: 3rem;
+}
+ul#social li{
+  height: 100%;
+  display: inline;
+  height: 2.8rem;
+  width: 2.8rem;
+  padding: 1.8rem;
+  margin: 3rem 0;
 }
