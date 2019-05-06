@@ -7,38 +7,63 @@
    <meta charset="utf-8">
    <link rel="stylesheet" href="styles/reset.css">
    <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/flex.css">
    <title> Portfolio | Bonnie  </title>
  </head>
  <body>
-     <header>
-        <img src="images/logo.svg" alt="logo"/>
 
-          <h1>Bonnie</h1>
-
-          <h1>Gabrielson</h1>
-
-        <ul id = "top-navigation">
-          <li><a href="index.html" class="navbar-link"> Home </a></li>
-          <li><a href="projectpage.html" class="navbar-link"> Work </a></li>
-          <li><a href="images/bonniegabrielson_resume.pdf" class="navbar-link"> Resume </a></li>
-          <li><a href="about.html" class="navbar-link"> About </a> </li>
-        </ul>
-        <div class="hero">
-          <h2>UX Designer based in Chicago</h2>
-          <p>With a background in fashion textiles and colors, I’m dedicated to creating user centric designs and to promote thoughtful, effective interactions.</p>
-          <img src="images/picturemap.jpg" alt="picturemap"/>
+       <div class="logoname">
+         <div class="logo">
+           <img src="images/logo.svg" alt="logo"/>
+         </div>
+         <div class="firstname">
+           <h1 id="firstname">Bonnie</h1>
+         </div>
+         <div class="lastname">
+           <h1 id="lastname">Gabrielson</h1>
         </div>
-      </header>
-      <main>
-        <h2>Explore My Projects</h2>
+      </div>
+      <div class="nav">
+        <ul id="top-navigation">
+          <li><a href="index.html" class="navbar-link home"> Home </a></li>
+          <li><a href="projectpage.html" class="navbar-link work"> Work </a></li>
+          <li><a href="images/bonniegabrielson_resume.pdf" class="navbar-link resume"> Resume </a></li>
+          <li><a href="about.html" class="navbar-link about"> About </a> </li>
+        </ul>
+      </div>
+        <div class="hero">
+          <div class="bonpic">
+            <img src="images/bonnie.jpg" alt="bonnie"/>
+          </div>
+          <div class="hero-text">
+            <h2>UX Designer based in Chicago</h2>
+            <p id="slogan">With a background in fashion textiles and colors, I’m dedicated to creating user centric designs and to promote thoughtful, effective interactions.</p>
+          </div>
+        </div>
+
+      <div class="mainprojects">
+            <h2>Explore My Projects</h2>
+      </div>
+
+      <div class="main">
+
           <div class="project">
             <h3>RECbook</h3>
-            <p>Multimedia Social Cloud Storage</p>
+            <div id="description">
+             <p>Multimedia Social Cloud Storage</p>
+            </div>
             <a href="project.html" class="button">Case Study</a>
           </div>
-      </main>
+          <div class="project one">
+            <h3>RECbook</h3>
+            <div id="description">
+             <p>project 2</p>
+            </div>
+            <a href="project.html" class="button">Case Study</a>
+          </div>
+      </div>
       <footer>
-          <h2>Let's Connect</h2>
+          <h2 id="connect">Let's Connect</h2>
           <ul id="social">
             <li> <a href="mailto:bonniegabrielson@gmail.com"><img src="images/Email.svg" width="33" height="26" title="Email" alt="Email"></a> </li>
             <li> <a href="https://www.linkedin.com/in/bonniegabrielson/"><img src="images/linkedin-logo.png" width="28" height="28" title="LinkedIn" alt="LinkedIn"></a> </li>

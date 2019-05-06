@@ -1,53 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800');
+*{
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #48434C;
+  font: 3.6rem "Muli", sans-serif;
+  font-weight: 800;
+}
+
+h2 {
+  font: 2.4rem/150% "Muli", sans-serif;
+  font-weight: 600;
+  color: #0C3F60;
+  padding-top: 9rem;
+}
+
+h3 {
+  font: 2rem/150% "Muli", sans-serif;
+  font-weight: 500;
+  color: #0C3F60;
+}
+
+h5 {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 600;
+  color: #000508;
+}
+
+h6 {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 700;
+  color: #000508;
+}
+
+li {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 300;
+  color: #000508;
+}
+
+p {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 300;
+  color: #000508;
+}
+
+body {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+  "logoname"
+  "nav"
+  "hero"
+  "mp"
+  "main"
+  "footer";
+}
+
+html{
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
 header {
-  background: url(../images/background-image.jpg) center / cover;
-  height: 60vh;
+  padding: 2rem, 0;
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.navbar-link {
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 300;
+  color: #000508;
+  padding: .5rem 2rem;
+  text-decoration: none;
+}
+
+.home {
+  border-bottom: .7rem solid #57BFAF;
+}
+
+ul#top-navigation li{
+  display: inline;
+}
+
+
+
+.logoname {
+  grid-area: logoname;
+  grid-template-columns: 1fr, 2fr, 3fr;
+  grid-template-rows: (2, 1fr);
+  margin: 7rem auto;
+  display: grid;
+  grid-template-areas:
+  "logo"
+  "first"
+  "last";
+}
+
+.logo {
+  text-align: right;
+  border-right: 1px solid #B9C7D1;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  grid-area: logo;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.logoname h1 {
+  grid-template-columns: 2, 3fr;
+  grid-template-rows: auto;
+  padding-left: 4rem;
+}
+
+.firstname{
+  grid-column: 3;
+  grid-row: 1;
+  grid-area: first;
+
+}
+
+.lastname{
+/*  grid-column: auto;
+  grid-row: 1;*/
+  grid-area: last;
+}
+
+#firstname {
+  -webkit-text-stroke: .75px #000508;
+	-webkit-text-fill-color: white;
+}
+
+.hero {
+    grid-area: hero;
+    background: url(../images/loop.jpg) center;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-position: center;
+    max-height: 23rem;
+    max-width: 106rem;
+    text-align: left;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "bonpic"
+    "hero-text";
+  }
+
+.bonpic {
+  grid-area: bonpic;
+}
+/* need repsonsive*/
+.hero-text {
+    max-width: 90rem;
+    max-height: 23rem;
+    padding-left: 13rem;
+    position: relative;
+    grid-area: hero-text;
+/*    grid-template-columns: 2;*/
+  }
+
+  .main {
+    grid-area: main;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem, 1rem;
+    margin: 8rem auto;
+    display: grid;
+
+  }
+
+  .mainprojects {
+    padding-bottom: 4rem;
+    text-align: center;
+    grid-area: mp;
+  }
+
+  #description {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+.project {
+  background-color: #F7FAFB;
+  height: 23rem;
+  width: 30rem;
+  text-align: center;
+  margin: auto;
+  position: relative; top:-2rem;
+  vertical-align: center;
+  grid-area: project;
+  display: flex wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  /*flex: row wrap;*/
+}
+
+.project one {
+  background-color: #F7FAFB;
+  height: 23rem;
+  width: 30rem;
+  text-align: center;
+  margin: auto;
+  position: relative; top:-2rem;
+  vertical-align: center;
+  grid-area: project1;
+}
+
+.button {
+  border-radius: 2rem;
+  padding: 1rem 6rem;
+  width: 20rem;
+  font: 1.4rem/150% "Muli", sans-serif;
+  font-weight: 700;
+  color: #000508;
+  border: 1px solid #57BFAF;
+  text-decoration: none;
   justify-content: center;
   text-align: center;
 }
 
-h1 {
-  color: hsla(0, 0%, 100%, 0.9);
-  font-weight: bold;
+.button:hover {
+  background: #57BFAF;
+  color: #000508;
 }
 
-.slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 1.6rem;
-}
 
-main {
-  max-width: 900px;
-}
 
-.project-description {
-  padding-left: 0;
-}
 
-.project img {
+footer {
+  grid-area: footer;
+  border-top: 3px solid #B9C7D1;
+  text-align: center;
   width: 100%;
+/*  z-index: 1;*/
 }
 
-
-footer.mdl-mini-footer {
-  bottom: 0;
-  padding: 0.5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+#connect {
+  color: #57BFAF;
+  padding-bottom: 3rem;
 }
 
+ul#social li{
+  height: 100%;
+  display: inline;
+  height: 2.8rem;
+  width: 2.8rem;
+  padding: 2rem;
+  vertical-align: center;
+  color: #000508;
 
-footer.mdl-mini-footer > ul {
-  margin: auto;
 }
 
-body {
-  padding-bottom: 5rem;
-}
-
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
+@media (width:70rem) {
+  body {
+    grid-template-columns: 2fr, 8fr, 2fr;
+    grid-template-areas:
+    "logoname logoname logoname"
+    ". nav . "
+    "mp mp mp"
+    "hero hero hero"
+    ". main . "
+    ". footer . ";
+    margin: 1rem, 1rem;
   }
+
+  .lastname{
+    grid-column: auto;
+  }
+
+.main {
+    display: inline;
+    display: grid;
+    grid-template-columns: 4fr, 2fr, 2fr, 4fr;
+    grid-template-areas:
+    ". project . ."
+    ". . project1 ."
+}
+
+.logoname {
+  grid-template-columns: 3fr, 3fr, 3fr;
+  grid-template-areas:
+  ". logo . ."
+  ". . first ."
+    ". . . last"
+}
+
+.logoname {
+  grid-template-columns: 2fr, 10fr;
+  grid-template-areas:
+  "bonpic . "
+  ". hero-text"
+}
+
+
+
 }
