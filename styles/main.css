@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400i,600,700,800');
 *{
   box-sizing: border-box;
 }
@@ -42,7 +42,7 @@ li {
 
 p {
   font: 1.6rem/150% "Muli", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   color: #000508;
 }
 
@@ -102,10 +102,11 @@ ul#top-navigation li{
   grid-template-rows: (2, 1fr);
   margin: 7rem auto;
   display: grid;
-  grid-template-areas:
+  grid-template-columns: auto;
+  /*grid-template-areas:
   "logo"
   "first"
-  "last";
+  "last";*/
 }
 
 .logo {
@@ -125,16 +126,17 @@ ul#top-navigation li{
 }
 
 .firstname{
-  grid-column: 3;
+  grid-column: 2;
   grid-row: 1;
-  grid-area: first;
+
+  /*grid-area: first;*/
 
 }
 
 .lastname{
-/*  grid-column: auto;
-  grid-row: 1;*/
-  grid-area: last;
+grid-column: 2;
+  grid-row: 2;
+/*   grid-area: last;*/
 }
 
 #firstname {
@@ -172,25 +174,39 @@ ul#top-navigation li{
   }
 
   .main {
-    grid-area: main;
+    /*grid-area: main;*/
     justify-content: center;
     align-items: center;
     padding: 5rem, 1rem;
     margin: 8rem auto;
-    display: grid;
+    display: flex;
+    flex-direction: row;
 
   }
 
   .mainprojects {
     padding-bottom: 4rem;
     text-align: center;
-    grid-area: mp;
+    /*grid-area: mp;*/
   }
 
   #description {
     padding-top: 2rem;
     padding-bottom: 5rem;
   }
+
+.recbook {
+  background-color: #F7FAFB;
+  height: 23rem;
+  width: 30rem;
+  text-align: center;
+  padding: 4rem, 5rem;
+  margin-right: 10rem;
+  margin-bottom: 8rem;
+  /*grid-area: project;*/
+
+  /*flex: row wrap;*/
+}
 
 .project {
   background-color: #F7FAFB;
@@ -200,22 +216,7 @@ ul#top-navigation li{
   margin: auto;
   position: relative; top:-2rem;
   vertical-align: center;
-  grid-area: project;
-  display: flex wrap;
-  justify-content: space-around;
-  flex-direction: row;
-  /*flex: row wrap;*/
-}
-
-.project one {
-  background-color: #F7FAFB;
-  height: 23rem;
-  width: 30rem;
-  text-align: center;
-  margin: auto;
-  position: relative; top:-2rem;
-  vertical-align: center;
-  grid-area: project1;
+/*  grid-area: project1;*/
 }
 
 .button {

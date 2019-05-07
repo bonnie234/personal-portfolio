@@ -4,7 +4,7 @@
 
 header{
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 
 #headerimage {
@@ -17,9 +17,9 @@ header{
   border-top: 4px solid #B9C7D1;
 }
 
-.viewbutton {
-  margin: 0 auto;
+#viewbutton {
   text-align: center;
+  margin: 10rem, 0;
 }
 
 .overview {
@@ -53,9 +53,7 @@ ul {
 section{
    height: auto;
    width: auto;
-  /* margin: 8.5rem 0;*/
    border-top: 3px solid #B9C7D1;
-
 }
 
 section p {
@@ -63,7 +61,6 @@ section p {
   padding-bottom: 9rem;
   /*margin: 0 15rem;*/
 }
-
 
 .sectionbox {
     margin: 0 1rem;
@@ -89,22 +86,11 @@ section p {
    border-radius: .5rem .5rem .5rem .5rem;
 }
 
-
-
-/*#one #three{
-  max-width: 29.5rem;
-  max-height:35rem;
-}
-#two{
-  max-width: 29.5rem;
-  max-height:35rem;
-  padding-bottom:;
-}*/
-
 .graph p {
   max-width: 29rem;
   text-align: left;
   padding-left: 2rem;
+  padding-top: 20%;
 }
 
 .graph img {
@@ -113,21 +99,21 @@ section p {
   padding-left: 5%;
   }
 
+.two p {
+  padding-top: 5%;
+}
 
-.column {
+.column .people {
    max-height: auto;
-   max-width: 35.5rem;
+   max-width: 36.5rem;
    padding-bottom: 8rem;
    margin-bottom: 10rem;
-  /* border-left: 1px solid #0C3F60;*/
 }
 
 .columncenter {
-  margin: 0 5rem;
-  width: 50%;
-  height: 50%;
+  margin: 0 auto;
   padding-bottom:6rem;
-  border-top: 1px solid #B9C7D1;
+  text-align: center;
 }
 
 .columncenter img{
@@ -155,9 +141,8 @@ section p {
 }
 
 #center {
-  margin: 0 auto;
+  text-align: center;
   padding-top: 5rem;
-  border-top: 1px solid #B9C7D1;
 }
 
 .people{
@@ -165,17 +150,18 @@ section p {
   display: flex;
 }
 
+
+
 .profilepic{
   flex-shrink: 0;
+  vertical-align: center;
 }
 
   .personabox {
     max-width: 37rem;
     max-height: auto;
-    vertical-align: center;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
     text-align: left;
-    grid-template-columns: 2 / span 2;
   }
 
 .icon {
@@ -186,7 +172,7 @@ section p {
 }
 
   .icon p{
-    padding: .5rem;
+    padding: .2rem;
     width: 2.8rem;
     float: left;
     text-align: left;
@@ -199,28 +185,39 @@ section p {
      margin: auto .5rem;
      grid-column: 2 / span 2;
   }
-
-
-  .checklist {
-    width: 36rem;
-    display: grid;
-    grid-template-columns: 2, 1fr;
-    padding-left: .5rem;
+  #tag{
+    width: 35rem;
   }
 
-
-
-.checklist p {
-  grid-column: 2 / span 2;
-  clear: left;
-  width: 20rem;
-  margin: 0 auto;
+.cxlist{
+  max-width: 35.5rem;
+  margin: 10rem auto;
+  line-height: 2.2rem;
+  text-align: left;
 }
 
+  .checklist {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
 
+#img{
+  height: 100%;
+  width: auto;
+  flex-shrink: 0;
+}
 
+.checklist p {
+  clear: left;
+  width: 32rem;
+  padding-left: 2rem;
+}
 
-
+.checklist img{
+  width: 2rem;
+  height: 2rem;
+}
 
 .slide {
   display: flex;
@@ -236,20 +233,104 @@ section p {
   margin-right: 2rem;
 }
 
-@media (width:70rem) {
+.sectionbox h3{
+  border-top: 1px solid #B9C7D1;
+}
+
+@media screen and (max-width:70rem) {
+  .column{
+     border-top: 1px solid #B9C7D1;
+  }
+
+  #center{
+      border-top: 1px solid #B9C7D1;
+  }
+}
+
+
+@media screen and (min-width:70rem) {
 
   .sectionbox {
       margin: 0 15rem;
   }
 
+.viewbutton{
+  margin: 45rem 0 45rem 0;
+}
+
   .overview {
     margin: 19rem auto;
   }
 
+  .probsol{
+    height: 45rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .problem{
+    border-right: 1px solid #B9C7D1;
+    margin: 2rem auto 2rem auto;
+  }
+
   .graphrow {
-    display: flex wrap;
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
-    height:;
+    margin-bottom: 12.5rem;
+  }
+
+    .column{
+      float: left;
+      width: 36.5rem;
+      padding: 0 1.8rem;
+    }
+
+    .b {
+      border-right: 1px solid #B9C7D1;
+    }
+
+    .analysis:after{
+       content: "";
+       display: table;
+       clear: both;
 }
+
+.persona{
+  display: flex;
+}
+
+.people {
+  flex: 50%;
+}
+
+
+.inspiration{
+  display: flex;
+  justify-content: center;
+
+}
+#inspiration{
+  margin-right: 5rem;
+}
+
+#brandsketch{
+    max-height: 40rem;
+}
+
+#center{
+  margin-top: 13rem;
+}
+
+.h{
+  height: 80rem;
+  position: relative;
+}
+#brandpic{
+  position: absolute;
+  bottom: 0;
+}
+
+    }
+
 }
