@@ -94,58 +94,45 @@ ul#top-navigation li{
   display: inline;
 }
 
-
-
 .logoname {
-  grid-area: logoname;
-  grid-template-columns: 1fr, 2fr, 3fr;
-  grid-template-rows: (2, 1fr);
   margin: 7rem auto;
-  display: grid;
-  grid-template-columns: auto;
-  /*grid-template-areas:
-  "logo"
-  "first"
-  "last";*/
+  display: flex;
+  /*grid-area: logoname;
+  grid-template-columns: 1fr, 2fr, 3fr;
+  grid-template-rows: (2, 1fr);*/
+  grid-template-areas:
+    "logo"
+    "first"
+    "last";
 }
 
 .logo {
   text-align: right;
   border-right: 1px solid #B9C7D1;
-  padding-right: 4rem;
-  padding-top: 2rem;
+  padding: 2rem 4rem 2rem 0;
   grid-area: logo;
   grid-column: 1;
   grid-row: 1 / span 2;
 }
 
-.logoname h1 {
-  grid-template-columns: 2, 3fr;
-  grid-template-rows: auto;
-  padding-left: 4rem;
-}
 
 .firstname{
   grid-column: 2;
   grid-row: 1;
-
+  padding-left: 4rem;
+  -webkit-text-stroke: .75px #000508;
+  -webkit-text-fill-color: white;
   /*grid-area: first;*/
-
 }
 
 .lastname{
-grid-column: 2;
+  grid-column: 2;
   grid-row: 2;
 /*   grid-area: last;*/
 }
 
-#firstname {
-  -webkit-text-stroke: .75px #000508;
-	-webkit-text-fill-color: white;
-}
 
 .hero {
-    grid-area: hero;
     background: url(../images/loop.jpg) center;
     background-repeat: no-repeat;
     background-size: 100%, 100%;
@@ -155,68 +142,62 @@ grid-column: 2;
     text-align: left;
     margin: 0 auto;
     display: grid;
-    grid-template-areas:
-    "bonpic"
-    "hero-text";
   }
 
 .bonpic {
   grid-area: bonpic;
 }
-/* need repsonsive*/
+
 .hero-text {
     max-width: 90rem;
     max-height: 23rem;
     padding-left: 13rem;
-    position: relative;
     grid-area: hero-text;
-/*    grid-template-columns: 2;*/
+    grid-template-columns: 2;
+    grid-auto-rows: 1;
+  }
+
+  .mainprojects  {
+    text-align: center;
+    grid-area: mp;
+
   }
 
   .main {
-    /*grid-area: main;*/
-    justify-content: center;
-    align-items: center;
-    padding: 5rem, 1rem;
-    margin: 8rem auto;
     display: flex;
-    flex-direction: row;
-
-  }
-
-  .mainprojects {
-    padding-bottom: 4rem;
-    text-align: center;
-    /*grid-area: mp;*/
+    flex-direction: column;
+    margin: 8rem auto;
+  /*
+    padding: 5rem 4rem;
+    grid-template-areas:
+      " recbook"
+      " projects ";
+      grid-template-columns: 230px 4fr 1fr;
+      grid-template-rows: 230px repeat;*/
   }
 
   #description {
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 5rem;
   }
 
-.recbook {
+
+.project{
   background-color: #F7FAFB;
+  border-radius: .5rem .5rem .5rem .5rem;
   height: 23rem;
   width: 30rem;
   text-align: center;
-  padding: 4rem, 5rem;
-  margin-right: 10rem;
-  margin-bottom: 8rem;
-  /*grid-area: project;*/
 
-  /*flex: row wrap;*/
+/*
+  justify-content: space-around;
+  display: grid;
+  align-content: space-between;
+  grid-area: project;*/
 }
 
-.project {
-  background-color: #F7FAFB;
-  height: 23rem;
-  width: 30rem;
-  text-align: center;
-  margin: auto;
-  position: relative; top:-2rem;
-  vertical-align: center;
-/*  grid-area: project1;*/
+.project h3{
+    padding-top: 3rem;
 }
 
 .button {
@@ -261,12 +242,59 @@ ul#social li{
   padding: 2rem;
   vertical-align: center;
   color: #000508;
-
 }
 
-@media (width:70rem) {
-  body {
-    grid-template-columns: 2fr, 8fr, 2fr;
+@media screen and (max-width:70rem){
+  .logoname {
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .logoname h1 {
+    padding-top: 0;
+  }
+
+  .lastname {
+   padding-left: 4rem;
+  }
+
+  .hero-text{
+    vertical-align: top;
+  }
+}
+
+@media screen and (min-width:70rem){
+
+
+  .logoname {
+    margin: 7rem auto;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 2, 1fr;
+    display: flex;
+  }
+
+  .logoname h1 {
+    padding-top: 2rem;
+  }
+
+  .lastname {
+    padding-left: 2rem;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .hero-text {
+    padding-right: 18rem;
+}
+
+.main {
+  display: flex;
+flex-direction: row;
+}
+}
+  /*  body {
+  grid-template-columns: 2fr, 8fr, 2fr;
     grid-template-areas:
     "logoname logoname logoname"
     ". nav . "
@@ -275,14 +303,12 @@ ul#social li{
     ". main . "
     ". footer . ";
     margin: 1rem, 1rem;
-  }
+  }*/
 
-  .lastname{
+  /*.lastname{
     grid-column: auto;
-  }
-
-.main {
-    display: inline;
+  }*/
+/*.main {
     display: grid;
     grid-template-columns: 4fr, 2fr, 2fr, 4fr;
     grid-template-areas:
@@ -303,8 +329,4 @@ ul#social li{
   grid-template-areas:
   "bonpic . "
   ". hero-text"
-}
-
-
-
-}
+}*/
