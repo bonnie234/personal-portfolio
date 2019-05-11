@@ -2,18 +2,34 @@
   box-sizing: border-box;
 }
 
-
-
 header{
   margin: 0 auto;
   width: 100%;
+}
+
+.logonamepage {
+  display: grid;
+  grid-template-columns: 10rem auto 10rem;
+  grid-template-rows: 3rem auto 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.logosolo {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.menu {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 #headerimage {
   margin: 10rem 0;
 }
 
-#projectitle{
+#projectitle {
   text-align: center;
   padding-top: 1rem;
   border-top: 4px solid #B9C7D1;
@@ -21,7 +37,7 @@ header{
 
 #viewbutton {
   text-align: center;
-  margin: 10rem, 0;
+  margin: 10rem 0;
 }
 
 .overview {
@@ -52,7 +68,7 @@ ul {
   width: 100%;
 }
 
-section{
+section {
    height: auto;
    width: auto;
    border-top: 3px solid #B9C7D1;
@@ -73,12 +89,13 @@ section p {
 }
 
 .graphrow {
-  display: flex wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row;
 }
 
-.graph{
+.graph {
    background-color: #F7FAFB;
    margin: 3rem auto;
    padding: 3rem, 2rem;
@@ -104,7 +121,7 @@ section p {
   padding-top: 5%;
 }
 
-.column  {
+.column {
    max-height: auto;
    max-width: 36.5rem;
    padding-bottom: 8rem;
@@ -113,12 +130,12 @@ section p {
 
 .columncenter {
   margin: 0 auto;
-  padding-bottom:6rem;
+  padding-bottom: 6rem;
   text-align: center;
   padding-top: 6rem;
 }
 
-.columncenter img{
+.columncenter img {
   padding-bottom: 3rem;
 }
 
@@ -147,84 +164,87 @@ section p {
   padding-top: 5rem;
 }
 
-.persona{
-display: grid;
-  grid-template-areas:
-    "people"
-    "tag"
-    "cxlist";
-    grid-template-columns: 36.5rem 1fr;
-    grid-template-rows: 3 1fr;
-}
-.people{
-  width: 40%;
-  display: grid;
+.people {
+  margin-bottom: 8rem;
+  max-width: 37.5rem;
   max-height: auto;
-  grid-area: people;
+  padding: 5rem 0 0 0;
+  /*grid-template-areas:
+    "personabox"
+    "tag"
+    "cxlist";*/
+   /*grid-template-columns: 1;
+    grid-template-rows: 20%, 15%, 65%;
   padding-bottom: 8rem;
-  margin-bottom: 10rem;
+  margin-bottom: 10rem;*/
+}
 
+
+.people p {
+  padding: 0 0 0 0;
 }
 
 .profilepic {
-  flex-shrink: 0;
-  vertical-align: center;
+    float: left;
+    margin: 0 1rem;
 }
 
-  .personabox {
-    max-width: 37rem;
+  /*  .personabox {
+  grid-area: personabox;
+    max-width: 23rem;
     max-height: auto;
-    line-height: 2.2rem;
     text-align: left;
-  }
-
+    padding-right: .5rem;
+    line-height: 2.2rem;
+    margin: auto 0;
+  }*/
 
 .icon {
-  width: 30rem;
   display: grid;
-  grid-template-columns: 2, 1fr;
-  padding-left: 1.5rem;
+  grid-template-columns: 2.2rem, 34rem;
+  grid-template-rows: 3rem;
+  max-width: 37.5rem;
+  padding-right: 1rem;
 }
 
-  .icon p {
-    padding: .2rem;
-    width: 2.8rem;
-    float: left;
-    text-align: left;
-    grid-column: 2.5rem;
+  .icon img {
+    margin: 0 .3rem;
+    grid-column: 1;
   }
 
   .icon h5 {
-     clear: left;
      width: 20rem;
-     margin: auto .5rem;
-     grid-column: 2 / span 2;
+     margin: auto 0;
+     grid-column: 2;
+     float: left;
+     text-align: left;
+     padding-left: .2rem;
   }
 
 .tag{
-    width: 37rem;
-    grid-row: 2 / span 1;
-    grid-area: tag;
+    max-width: 37rem;
+    padding: 4rem 0 4rem 0;
+    /*grid-row: 2;
+    grid-area: tag;*/
   }
 
-.cxlist{
-  margin: 10rem auto;
-  line-height: 2.2rem;
+  /*.cxlist{
+margin: 0 auto;
   text-align: left;
   grid-area: cxlist;
   grid-row: 3;
-}
+  line-height: 2.2rem
+}*/
 
   .checklist {
+    padding: 1.5rem 0 1.5rem 0;
     display: flex;
     flex-direction: row;
-    padding-bottom: 2rem;
   }
-
 
 .checklist p {
   clear: left;
-  width: 32rem;
+  max-width: 32rem;
   padding-left: 2rem;
 }
 
@@ -236,6 +256,7 @@ display: grid;
 #userflowbox {
   margin-bottom: 9rem;
 }
+
 .slide {
   display: flex;
   overflow-x: auto;
@@ -254,8 +275,9 @@ display: grid;
      border-top: 1px solid #B9C7D1;
 }
 
-@media screen and (max-width:70rem) {
-.column{
+@media screen and (max-width:60rem) {
+
+.column {
      border-top: 1px solid #B9C7D1;
   }
 
@@ -267,38 +289,21 @@ display: grid;
       border-top: 1px solid #B9C7D1;
   }
 
-  /*.sectionbox h3{
+  .s{
     border-top: 1px solid #B9C7D1;
-  }*/
-}
-@media screen and (max-width:70rem){
-.logoname{
-  display: grid;
-  grid-template-areas:
-  ". . menu"
-  "logo . .";
-  grid-template-rows: 1;
-  grid-template-columns: 20% 80% 20%;
-  margin-top: 8rem;
-  
-}
-
-.menu{
-   grid-area: menu;
-   grid-row: 1;
-   grid-column: 3;
-   margin: auto 0;
-   padding-right: 2rem;
   }
 
-  .logo{
-    grid-area: logo;
-    grid-row: 1;
-    grid-column: 1;
+  .a {
+    margin-bottom: 5rem;
   }
+
 }
 
-@media screen and (min-width:70rem) {
+
+
+
+
+@media screen and (min-width:60rem) {
 
   .sectionbox {
       margin: 0 15rem;
@@ -312,25 +317,29 @@ display: grid;
     margin: 19rem auto;
   }
 
-  .probsol{
+  .probsol {
     height: 45rem;
     display: flex;
     flex-direction: row;
   }
 
-  .problem{
+  .problem {
     border-right: 1px solid #B9C7D1;
     margin: 2rem auto 2rem auto;
   }
 
+  .solution {
+    margin: 2rem auto;
+  }
+
   .graphrow {
-    display: flex;
+    display: flex wrap;
     justify-content: space-around;
     flex-direction: row;
     margin-bottom: 12.5rem;
   }
 
-    .column{
+    .column {
       float: left;
       width: 33.3%;
       padding: 0 1.8rem;
@@ -340,47 +349,92 @@ display: grid;
       border-right: 1px solid #B9C7D1;
     }
 
-    .analysis:after{
+    .analysis:after {
        content: "";
        display: table;
        clear: both;
 }
 
-.persona{
-  display: flex;
+.persona {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: auto 37.5 37.5 auto;
+  margin-bottom: 12.5rem;
 }
 
 .people {
-  flex: 50%;
+  /*padding: 0 1.8rem;
+  margin: auto 0;*/
+    margin-bottom: 8rem;
+    padding: 5rem 0 0 0;
 }
 
+.personabox {
+  max-width: 23rem;
+  max-height: auto;
+  margin auto 0;
+}
 
-.inspiration{
+.a {
+  grid-column: 2;
+  grid-row: 1;
+  padding-right: 12rem;
+  max-width: 158rem;
+  max-height: auto;
+}
+
+.s {
+  margin-right: 12rem;
+  grid-column: 3;
+  grid-row: 1;
+  max-width: 158rem;
+  max-height: auto;
+  border-left: 1px solid #B9C7D1;
+  padding-left: 12rem;
+}
+
+.inspiration {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-
+  padding-bottom: 12rem;
+  border-bottom: 1px solid #B9C7D1;
 }
-#inspiration{
+
+#inspiration {
   margin-right: 5rem;
 }
 
-#brandsketch{
-    max-height: 40rem;
+#brandsketch {
+  max-height: 40rem;
+}
+
+.brandevelop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 75rem;
+  margin: 16rem auto;
 }
 
 #center{
   margin-top: 13rem;
 }
 
-.h{
-  height: 80rem;
+.h {
   position: relative;
+  margin: 0 1rem;
 }
+
+.h p {
+  vertical-align: text-top;
+}
+
 #brandpic{
   position: absolute;
   bottom: 0;
+  width:90%;
+  height: auto;
 }
-
-    }
 
 }
