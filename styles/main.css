@@ -94,10 +94,10 @@ ul#top-navigation li{
 }
 
 .logoname {
-    align-items: center;
+  align-items: center;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: [logo] 33.33% [name] 66.66%;
+  grid-template-columns: [logo] 30% [name] 70%;
   grid-template-rows: [row1-start] 4rem [row1-end] 4rem;
   /*grid-area: logoname;
   grid-template-columns: 1fr, 2fr, 3fr;
@@ -277,13 +277,13 @@ ul#social li {
     margin: 7rem auto;
   }
 
-.name{
+ .name{
     padding-bottom: 3rem;
-}
-
+    padding-left: 1rem;
+ }
 
   .last {
-   padding-left: 4rem;
+     padding-left: 1rem;
   }
 
   .hero-text{
@@ -297,7 +297,7 @@ ul#social li {
     margin: 13rem auto;
     display: flex;
     flex-direction: row;
-    
+
     /*   grid-template-columns: 30%, 15%, 55%;
     grid-template-rows: 8rem;
  margin: 7rem auto;

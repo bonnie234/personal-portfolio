@@ -96,11 +96,10 @@ section p {
 }
 
 .graph {
-   background-color: #F7FAFB;
+   background-color: #ECF8F9;
    margin: 3rem auto;
-   padding: 3rem, 2rem;
-   width: 320px;
-   height: 350px;
+   width: 32rem;
+   height: 35rem;
    border-radius: .5rem .5rem .5rem .5rem;
 }
 
@@ -108,18 +107,12 @@ section p {
   max-width: 29rem;
   text-align: left;
   padding-left: 2rem;
-  padding-top: 20%;
+  padding-top: 1%;
 }
 
 .graph img {
-  max-width: 295px;
   align-items: center;
-  padding-left: 5%;
   }
-
-.two p {
-  padding-top: 5%;
-}
 
 .column {
    max-height: auto;
@@ -159,6 +152,10 @@ section p {
   padding-bottom: 10rem;
 }
 
+#brandsketch {
+  margin-bottom: 4rem;
+}
+
 #center {
   text-align: center;
   padding-top: 5rem;
@@ -186,7 +183,7 @@ section p {
 
 .profilepic {
     float: left;
-    margin: 0 1rem;
+    margin: 0 .5rem;
 }
 
   /*  .personabox {
@@ -201,24 +198,24 @@ section p {
 
 .icon {
   display: grid;
-  grid-template-columns: 2.2rem, 34rem;
+  grid-template-columns: 2.2rem, 35rem;
   grid-template-rows: 3rem;
-  max-width: 37.5rem;
-  padding-right: 1rem;
 }
 
   .icon img {
-    margin: 0 .3rem;
+    margin: auto .3rem;
     grid-column: 1;
+    width: 2rem;
+    height: 2rem;
   }
 
   .icon h5 {
      width: 20rem;
      margin: auto 0;
      grid-column: 2;
-     float: left;
      text-align: left;
      padding-left: .2rem;
+     max-width: 19rem;
   }
 
 .tag{
@@ -244,7 +241,7 @@ margin: 0 auto;
 
 .checklist p {
   clear: left;
-  max-width: 32rem;
+  max-width: 34rem;
   padding-left: 2rem;
 }
 
@@ -263,6 +260,7 @@ margin: 0 auto;
   flex-grow: 0;
   margin-right: 2rem;
   margin-bottom: 6rem;
+  margin-left: 4rem;
   padding: 0, 2rem;
   align-items: flex-start;
 }
@@ -275,10 +273,11 @@ margin: 0 auto;
      border-top: 1px solid #B9C7D1;
 }
 
-@media screen and (max-width:60rem) {
+@media screen and (max-width: 59.9rem) {
 
 .column {
      border-top: 1px solid #B9C7D1;
+     margin-bottom: 4.5rem;
   }
 
   #center{
@@ -309,9 +308,9 @@ margin: 0 auto;
       margin: 0 15rem;
   }
 
-.viewbutton{
-  margin: 45rem 0 45rem 0;
-}
+  .viewbutton{
+    margin: 45rem 0;
+  }
 
   .overview {
     margin: 19rem auto;
@@ -325,11 +324,11 @@ margin: 0 auto;
 
   .problem {
     border-right: 1px solid #B9C7D1;
-    margin: 2rem auto 2rem auto;
+    margin: 5rem auto;
   }
 
   .solution {
-    margin: 2rem auto;
+    margin: 5rem auto;
   }
 
   .graphrow {
@@ -353,44 +352,50 @@ margin: 0 auto;
        content: "";
        display: table;
        clear: both;
-}
+    }
 
-.persona {
-  display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: auto 37.5 37.5 auto;
-  margin-bottom: 12.5rem;
-}
+    .persona {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+    }
 
 .people {
   /*padding: 0 1.8rem;
   margin: auto 0;*/
+    display: grid;
     margin-bottom: 8rem;
     padding: 5rem 0 0 0;
+    table-layout: fixed;
 }
 
 .personabox {
-  max-width: 23rem;
+  max-width: 37.5rem;
   max-height: auto;
-  margin auto 0;
+  margin: auto 0;
 }
 
 .a {
   grid-column: 2;
   grid-row: 1;
-  padding-right: 12rem;
-  max-width: 158rem;
+  padding: auto 10%;
+  max-width: 38rem;
   max-height: auto;
+
 }
 
 .s {
-  margin-right: 12rem;
-  grid-column: 3;
+  grid-column: 2;
   grid-row: 1;
-  max-width: 158rem;
+  max-width: 38rem;
   max-height: auto;
-  border-left: 1px solid #B9C7D1;
-  padding-left: 12rem;
+
+
+}
+
+.wireframes {
+  margin-bottom: 10rem;
 }
 
 .inspiration {
@@ -409,32 +414,87 @@ margin: 0 auto;
   max-height: 40rem;
 }
 
+
 .brandevelop {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  height: 75rem;
+  height: 65rem;
   margin: 16rem auto;
 }
 
-#center{
-  margin-top: 13rem;
-}
 
 .h {
   position: relative;
   margin: 0 1rem;
 }
 
+.h h3{
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
 .h p {
   vertical-align: text-top;
+  text-align: left;
 }
 
-#brandpic{
+.h img {
   position: absolute;
   bottom: 0;
-  width:90%;
+  max-width: 90%;
   height: auto;
+  text-align: center;
 }
 
 }
+
+
+@media  (max-width: 90rem) {
+
+  .sectionbox{
+      margin: 0 5rem;
+  }
+
+  .inspiration {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 12rem;
+  border-bottom: 1px solid #B9C7D1;
+}
+
+#inspiration {
+  margin-right: 5rem;
+}
+
+#brandsketch {
+  max-height: 40rem;
+}
+
+
+ }
+@media  (max-width: 120rem) {
+
+  .sectionbox {
+      margin: 0 15rem;
+  }
+
+  .people {
+      display: grid;
+      margin-bottom: 8rem;
+      padding: 5rem 0 0 0;
+      table-layout: fixed;
+  }
+
+  .s {
+    grid-column: 3;
+    grid-row: 1;
+    max-width: 158rem;
+    max-height: auto;
+    border-left: 1px solid #B9C7D1;
+    padding-left: 12rem;
+  }
+
+
+}
+@media (max-width: 180rem) { }
