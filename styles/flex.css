@@ -32,7 +32,7 @@ header{
 #projectitle {
   text-align: center;
   padding-top: 1rem;
-  border-top: 4px solid #B9C7D1;
+  border-top: 4px solid #27222D;
 }
 
 #viewbutton {
@@ -258,20 +258,26 @@ margin: 0 auto;
   display: flex;
   overflow-x: auto;
   flex-grow: 0;
-  margin-right: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   margin-left: 4rem;
   padding: 0, 2rem;
   align-items: flex-start;
 }
 
-.slide img{
+.slidehi{
+    margin-bottom: 10rem;
+}
+
+.slide img {
   margin-right: 2rem;
 }
 
-.testline{
+.testline {
      border-top: 1px solid #B9C7D1;
 }
+
+
+
 
 @media screen and (max-width: 59.9rem) {
 
@@ -280,7 +286,7 @@ margin: 0 auto;
      margin-bottom: 4.5rem;
   }
 
-  #center{
+  #center {
       border-top: 1px solid #B9C7D1;
   }
 
@@ -294,6 +300,25 @@ margin: 0 auto;
 
   .a {
     margin-bottom: 5rem;
+  }
+
+
+
+  .h {
+    position: relative;
+    margin: 0 1rem;
+  }
+
+  .h h3 {
+    padding-top: 10rem;
+
+    text-align: center;
+    padding-bottom: 10rem;
+  }
+
+  .h p {
+    vertical-align: text-top;
+    text-align: left;
   }
 
 }
@@ -317,7 +342,7 @@ margin: 0 auto;
   }
 
   .probsol {
-    height: 45rem;
+    max-height: auto;
     display: flex;
     flex-direction: row;
   }
@@ -332,7 +357,8 @@ margin: 0 auto;
   }
 
   .graphrow {
-    display: flex wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
     margin-bottom: 12.5rem;
@@ -343,6 +369,7 @@ margin: 0 auto;
       width: 33.3%;
       padding: 0 1.8rem;
     }
+
 
     .b {
       border-right: 1px solid #B9C7D1;
@@ -382,7 +409,6 @@ margin: 0 auto;
   padding: auto 10%;
   max-width: 38rem;
   max-height: auto;
-
 }
 
 .s {
@@ -390,12 +416,10 @@ margin: 0 auto;
   grid-row: 1;
   max-width: 38rem;
   max-height: auto;
-
-
 }
 
 .wireframes {
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
 }
 
 .inspiration {
@@ -414,7 +438,6 @@ margin: 0 auto;
   max-height: 40rem;
 }
 
-
 .brandevelop {
   display: flex;
   flex-direction: row;
@@ -428,7 +451,7 @@ margin: 0 auto;
   margin: 0 1rem;
 }
 
-.h h3{
+.h h3 {
   text-align: center;
   padding-bottom: 10rem;
 }
@@ -449,18 +472,27 @@ margin: 0 auto;
 }
 
 
-@media  (max-width: 90rem) {
+@media  (min-width: 90rem) {
+
 
   .sectionbox{
       margin: 0 5rem;
   }
 
+  #headerimage {
+    margin-top: 19rem;
+  }
+
+  #projectitle {
+    padding-top: 4rem;
+  }
+
   .inspiration {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 12rem;
-  border-bottom: 1px solid #B9C7D1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 12rem;
+    border-bottom: 1px solid #B9C7D1;
 }
 
 #inspiration {
@@ -473,7 +505,7 @@ margin: 0 auto;
 
 
  }
-@media  (max-width: 120rem) {
+@media  (min-width: 120rem) {
 
   .sectionbox {
       margin: 0 15rem;
@@ -491,10 +523,17 @@ margin: 0 auto;
     grid-row: 1;
     max-width: 158rem;
     max-height: auto;
-    border-left: 1px solid #B9C7D1;
-    padding-left: 12rem;
+    border-left: 1px solid blue;
   }
 
+  .slide {
 
+  /*  width: calc(100% + 20vw);
+  margin: 2rem -10vw;
+  }*/
 }
-@media (max-width: 180rem) { }
+@media (min-width: 180rem) {
+  .sectionbox {
+      margin: 0 15rem;
+  }
+}

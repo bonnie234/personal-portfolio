@@ -85,6 +85,21 @@ header {
   text-decoration: none;
 }
 
+a.home:hover{
+  font-weight: 700;
+}
+
+a.work:hover{
+  font-weight: 700;
+}
+
+a.resume:hover{
+  font-weight: 700;
+}
+
+a.about:hover{
+  font-weight: 700;
+}
 .home {
   border-bottom: .7rem solid #57BFAF;
 }
@@ -350,7 +365,6 @@ ul#social li {
 }
   /*  body {
   grid-template-columns: 2fr, 8fr, 2fr;
-    grid-template-areas:
     "logoname logoname logoname"
     ". nav . "
     "mp mp mp"
@@ -362,16 +376,7 @@ ul#social li {
 
   /*.lastname{
     grid-column: auto;
-  }*/
-/*.main {
-    display: grid;
-    grid-template-columns: 4fr, 2fr, 2fr, 4fr;
-    grid-template-areas:
-    ". project . ."
-    ". . project1 ."
-}
-
-.logoname {
+  }*/].logoname {
   grid-template-columns: 3fr, 3fr, 3fr;
   grid-template-areas:
   ". logo . ."
