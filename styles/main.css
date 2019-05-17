@@ -100,13 +100,16 @@ a.resume:hover{
 a.about:hover{
   font-weight: 700;
 }
+
 .home {
   border-bottom: .7rem solid #57BFAF;
 }
 
 ul#top-navigation li{
   display: inline;
-}
+}*/
+
+
 
 .logoname {
   align-items: center;
@@ -134,9 +137,9 @@ ul#top-navigation li{
   grid-row: 1 / 2;
   height:  8.5rem;
   min-width: 8.5rem;
-
-
 }
+
+
 
 .name {
   align-items: center;

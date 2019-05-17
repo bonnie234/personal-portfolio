@@ -12,3 +12,15 @@ function carousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 1500); // Change image every 2 seconds
 }
+
+
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
