@@ -7,30 +7,20 @@ header{
   width: 100%;
 }
 
-body
-{
-  margin: 0;
-  padding: 0;
 
-  /* make it look decent enough */
-  background: #ffffff;
-  color: #cdcdcd;
-  font-family: muli ;
-
-  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
-}
 
 a
 {
   text-decoration: none;
-  color: #232323;
+  color: #000508;
 
   transition: color 0.3s ease;
 }
 
 a:hover
 {
-  color: tomato;
+  color: #57BFAF;
+  font-weight: 700;
 }
 
 #menuToggle
@@ -130,12 +120,13 @@ a:hover
 {
   position: absolute;
   width: 300px;
+  height: auto;
   margin: -100px 0 0 0;
   padding: 50px;
   padding-top: 125px;
   right: -100px;
 
-  background: #ededed;
+  background: #F4F9FB;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -161,9 +152,7 @@ a:hover
   opacity: 1;
 }
 
-/*.container {
-  width: 38rem;
-}*/
+
 .container {
   margin: 0 auto;
   /*width: 38rem;*/
@@ -190,7 +179,7 @@ a:hover
 }
 
 #headerimage {
-  margin: 10rem 0;
+  margin: 10rem 0 2rem 0;
 }
 
 #projectitle {
