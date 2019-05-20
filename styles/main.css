@@ -81,17 +81,16 @@ header {
   font: 1.6rem/150% "Muli", sans-serif;
   font-weight: 300;
   color: #000508;
-  padding: .5rem 1rem;
+  padding: .5rem 2rem;
   text-decoration: none;
 }
-
 
 .home {
   border-bottom: .7rem solid #57BFAF;
 }
 
 ul#top-navigation li{
-  display: inline;
+  display: inline-block;
 }
 
 .logoname {
