@@ -7,6 +7,11 @@ header{
   width: 100%;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a
 {
   text-decoration: none;
@@ -25,7 +30,7 @@ a:hover
   display: block;
   position: absolute;
   top: 75px;
-  right: 50px;
+  right: 75px;
 
   z-index: 1;
 
@@ -137,7 +142,7 @@ a:hover
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 10px 5px;
   font-size: 22px;
 }
 
@@ -414,6 +419,10 @@ margin: 0 auto;
   align-items: flex-start;
 }
 
+.wireframes{
+  max-width: 100%;
+}
+
 .slidehi{
     margin-bottom: 10rem;
 }
@@ -422,9 +431,15 @@ margin: 0 auto;
   margin-right: 2rem;
 }
 
+.paper{
+ margin: 0 0 10rem 0;
+}
+
+
 .testline {
      border-top: 1px solid #B9C7D1;
 }
+
 
 
 
@@ -472,9 +487,6 @@ margin: 0 auto;
 }
 
 
-
-
-
 @media screen and (min-width:60rem) {
 
  .container {
@@ -488,6 +500,9 @@ margin: 0 auto;
 
   #headerimage {
     background-image:url("images/recbookheaderlg.jpg");
+    height: auto;
+    max-width: 95%;
+    margin: 10rem auto;
   }
 
   .viewbutton{
@@ -588,7 +603,14 @@ margin: 0 auto;
 .slide {
   margin-left: -10%;
   margin-right: -10%;
+  margin-bottom: 8rem;
 }
+
+.digital {
+  justify-content: center;
+  margin-top: 10rem;
+}
+
 
 .inspiration {
   display: flex;
@@ -642,9 +664,9 @@ margin: 0 auto;
 
 @media screen and (min-width: 90rem) {
 
- /*.container {
+.container {
     width: 89rem;
-  }*/
+  }
 
   .sectionbox{
       margin: 0 10%;
@@ -680,6 +702,7 @@ margin: 0 auto;
   max-height: 40rem;
 }
 
+}
 
  }
 @media screen and (min-width: 120rem) {

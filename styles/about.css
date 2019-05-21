@@ -268,4 +268,20 @@ body {
       body {
         margin: auto 0;
       }
-    }
+
+          .about1 p {
+            margin: 0 18%;
+          }
+
+          .about2 p {
+            margin: 0 18%;
+          }
+
+          .about3 p {
+            margin: 0 18%;
+          }
+
+          .about4 p {
+            margin: 0 18%;
+          }
+        }
