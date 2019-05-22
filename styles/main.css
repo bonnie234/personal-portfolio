@@ -56,11 +56,16 @@ body {
   "mp"
   "main"
   "footer";
-
 }
 
 html{
   font-size: 10px;
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 img {
@@ -70,6 +75,7 @@ img {
 
 header {
   margin: 2rem, 0;
+  width: 100%;
 }
 
 .nav {
@@ -246,19 +252,6 @@ ul#social li {
   vertical-align: center;
   color: #000508;
 }
-#social:hover{
-  color: blue;
-}
-
-header{
-  margin: 0 auto;
-  width: 100%;
-}
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 a
 {
@@ -403,6 +396,11 @@ a:hover
   opacity: 1;
 }
 
+.menu {
+  grid-column: 3;
+  grid-row: 2;
+}
+
 .container {
   margin: 0 auto;
   /*width: 38rem;*/
@@ -419,11 +417,6 @@ a:hover
 
 .logosolo {
   grid-column: 1;
-  grid-row: 2;
-}
-
-.menu {
-  grid-column: 3;
   grid-row: 2;
 }
 
@@ -743,6 +736,7 @@ section p {
   padding-top: 10%;
 }
 
+
 @media screen and (max-width:59rem){
   .logoname {
     margin: 7rem auto;
@@ -936,8 +930,6 @@ section p {
    }
 
 .people {
- /*padding: 0 1.8rem;
- margin: auto 0;*/
    display: grid;
    margin-bottom: 8rem;
    padding: 5rem 0 0 0;
@@ -1061,7 +1053,6 @@ section p {
   }
 
   .analysis {
-
     margin-left: auto;
     margin-right: auto;
   }
@@ -1088,7 +1079,6 @@ section p {
 
 }
 
- }
 @media screen and (min-width: 120rem) {
 
   /*.container {
