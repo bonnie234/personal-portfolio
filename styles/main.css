@@ -62,7 +62,6 @@ html{
   font-size: 10px;
 }
 
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -396,14 +395,8 @@ a:hover
   opacity: 1;
 }
 
-.menu {
-  grid-column: 3;
-  grid-row: 2;
-}
-
 .container {
   margin: 0 auto;
-  /*width: 38rem;*/
   width: 100%;
 }
 
@@ -417,6 +410,11 @@ a:hover
 
 .logosolo {
   grid-column: 1;
+  grid-row: 2;
+}
+
+.menu {
+  grid-column: 3;
   grid-row: 2;
 }
 
@@ -467,7 +465,7 @@ ul {
 section {
    height: auto;
    width: auto;
-   border-top: 3px solid #B9C7D1;
+   border-top: 3px solid #27222D;
 }
 
 section p {
@@ -719,7 +717,6 @@ section p {
   background: url(../images/postit.jpg);
   background-size: 100% 100%;
   margin-bottom: 12.5rem;
-
 }
 
 .about4 {
@@ -735,7 +732,6 @@ section p {
   line-height: 3rem;
   padding-top: 10%;
 }
-
 
 @media screen and (max-width:59rem){
   .logoname {
@@ -783,7 +779,6 @@ section p {
 
     .h h3 {
       padding-top: 10rem;
-
       text-align: center;
       padding-bottom: 10rem;
     }
@@ -930,6 +925,8 @@ section p {
    }
 
 .people {
+ /*padding: 0 1.8rem;
+ margin: auto 0;*/
    display: grid;
    margin-bottom: 8rem;
    padding: 5rem 0 0 0;
@@ -1052,7 +1049,7 @@ section p {
     margin-top: 19rem;
   }
 
-  .analysis {
+  .analysis
     margin-left: auto;
     margin-right: auto;
   }
@@ -1078,6 +1075,7 @@ section p {
 }
 
 }
+
 
 @media screen and (min-width: 120rem) {
 
@@ -1129,7 +1127,6 @@ section p {
     grid-row: 1;
     max-width: 158rem;
     max-height: auto;
-    border-left: 1px solid blue;
   }
 
 }
