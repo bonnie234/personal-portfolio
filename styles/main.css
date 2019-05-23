@@ -367,6 +367,7 @@ a:hover
   padding: 50px;
   padding-top: 125px;
   right: -100px;
+  float: none;
   /*display: none;*/
 
   background: #F4F9FB;
@@ -425,13 +426,13 @@ a:hover
 #projectitle {
   text-align: center;
   padding-top: 1rem;
-  border-top: 4px solid #27222D;
+  border-top: 3px solid #27222D;
 }
 
 #headerimage {
-  width: 100%;
-  margin: 10rem 0 2rem 0;
-
+  width: 80%;
+  margin: 10rem auto 2rem auto;
+  display: block;
 }
 
 #viewbutton {
@@ -465,7 +466,7 @@ ul {
 section {
    height: auto;
    width: auto;
-   border-top: 3px solid #27222D;
+   border-top: 3px solid #B9C7D1;
 }
 
 section p {
@@ -476,6 +477,10 @@ section p {
 
 .sectionbox {
     margin: 0 1rem;
+}
+
+.aboutcontainer {
+  border-top: 3px solid #27222D;
 }
 
 .center {
@@ -672,7 +677,7 @@ section p {
   font-weight: 400;
   color: #000508;
   line-height: 3rem;
-  padding-top: 10%;
+  padding: 5% 0;
 }
 
 .aboutpic2 {
@@ -691,7 +696,7 @@ section p {
   font-weight: 400;
   color: #000508;
   line-height: 3rem;
-  padding-top: 10%;
+  padding: 5% 0;
 }
 
 .aboutpic3 {
@@ -710,7 +715,7 @@ section p {
   font-weight: 400;
   color: #000508;
   line-height: 3rem;
-  padding-top: 10%;
+  padding: 5% 0;
 }
 
 .aboutpic4 {
@@ -730,10 +735,11 @@ section p {
   font-weight: 400;
   color: #000508;
   line-height: 3rem;
-  padding-top: 10%;
+  padding: 5% 0;
 }
 
 @media screen and (max-width:59rem){
+
   .logoname {
     margin: 7rem auto;
   }
@@ -969,7 +975,6 @@ section p {
  margin-top: 10rem;
 }
 
-
 .inspiration {
  display: flex;
  flex-direction: row;
@@ -992,7 +997,6 @@ section p {
  height: 65rem;
  margin: 16rem auto;
 }
-
 
 .h {
  position: relative;
