@@ -12,32 +12,41 @@
  </head>
  <body>
      <header>
-       <div class="logonamepage">
-         <div class="logosolo">
-           <a href="index.html">
-           <img src="images/logo.svg" alt="logo"/>
-           </a>
+
+
+         <div class="Navbar">
+           <nav class="Navbar__Items">
+             <div class="Navbar__Link Navbar__Link-brand">
+               <a href="index.html">
+               <img src="images/logo.svg" alt="logo"/>
+               </a>
+             </div>
+             <div class="Navbar__Link first name">
+               <h1>Bonnie</h1>
+             </div>
+             <div class="Navbar__Link last name">
+               <h1>Gabrielson</h1>
+             </div>
+             <div class="Navbar__Link Navbar__Link-toggle">
+  <i class="fas fa-bars"></i>
+</div>
+             <div class="Navbar__Link">
+               Link
+             </div>
+           </nav>
+           <nav class="Navbar__Items Navbar__Items--right">
+             <div class="Navbar__Link">
+               Link
+             </div>
+             <div class="Navbar__Link">
+               Link
+             </div>
+           </nav>
          </div>
 
-         <nav role='navigation'>
-           <div id="menuToggle">
-
-             <input type="checkbox" />
 
 
-             <span></span>
-             <span></span>
-             <span></span>
 
-             <ul id="menu">
-               <a href="index.html"><li>Home</li></a>
-               <a href="index.html#nav-projects"><li>Projects</li></a>
-               <a href="images/bonniegabrielson_resume.pdf"><li>Resume</li></a>
-               <a href="about.html"><li>About</li></a>
-
-             </ul>
-           </div>
-         </nav>
 
 
       </div>
@@ -213,7 +222,8 @@
              <div class="sectionbox">
 
                <h2>User Personas</h2>
-               <p>A closer examination of a couple key types of users.</p>
+               <p>A closer examination of a couple key types of users.     <a href="images/RECbookpersonas.png" target="_blank" class="link">   Examine Personas.</a></p>
+
 
             <div class="persona">
 
@@ -240,7 +250,12 @@
                 </ul>
 
               <div class="tag">
-                <p>“My kids are involved in sports and activities. Between them and keeping up on work with S&L development, I have little time for much else.”</p>
+                <p>“My kids are involved in sports and activities. Between them and keeping up on work with S&L development, I have very little free time.”</p>
+              </div>
+
+              <div class="motivations">
+                 <h5>Motivations:</h5>
+                 <p>Community, Usability, Organization, Value</p>
               </div>
 
                 <h5>Goals:</h5>
@@ -289,6 +304,11 @@
                  <p>“I’m always looking for a good book to read, a good trip to take or tips for cooking. Work requires me to keep on social media ideas and trends.”</p>
            </div>
 
+           <div class="motivations">
+              <h5>Motivations:</h5>
+              <p>Socialness, Mobility, Exploration, Convenience </p>
+           </div>
+
                <h5>Goals:</h5>
                  <div class="checklist">
                    <div id="img"> <img src="images/check.jpg" alt="Check"></div>
@@ -309,13 +329,18 @@
                 </div>
                </div>
 
-
             </section>
 
                <section>
                  <div class="sectionbox">
                    <h2>User Stories & User Flows</h2>
-                   <p>Wireframes outlined steps of the major processes of the site, such as onboarding, uploading content, creating content and browing network activity.</p>
+                   <p>Wireframes outlined steps of the major processes of the site, such as onboarding, uploading content, creating content and browing network activity.   <a href="images/RECbookuserstories.png" target="_blank" class="link">   Examine User Stories.</a></p>
+                 <ul class="userstories">
+                    <li><a href="images/userflowonboarding.png" target="_blank" class="link">  ONBOARD:</a> As a new user	I want to sign up for an account.	</li>
+                    <li><a href="images/userflowcreatecontent.png" target="_blank" class="link">  CREATE CONTENT:</a> As a returning user	I want to create and save content (notes, documents).</li>
+                    <li><a href="images/userflowuploadcontent.png" target="_blank" class="link">  UPLOAD:</a> As a returning user	I want to upload files (videos, images, PDFs) from phone or computer.</li>
+                    <li><a href="images/userflowuploadcontent.png" target="_blank" class="link">  BROWSE:</a> As a returning user	I want to browse friends/associates content.</li>
+                 </ul>
                   <div id="userflowbox">
                      <img src="images/userflowsall.jpg" alt="User Flows">
                   </div>
@@ -343,7 +368,7 @@
             <section>
                 <div class="sectionbox">
                   <h2>Branding</h2>
-                  <p>The thought process building ideas around journal. </p>
+                  <p>The thought process building ideas around journal. <a href="images/RECbookstyleguide.png" target="_blank" class="link">  Style Guide</a></p>
                   <div class="inspiration">
                     <img id="inspiration" src="images/moodboardpictures.jpg" alt="Mood Board Pictures">
                     <img id="brandsketch" src="images/wordsketches.jpg" alt="Inspiration Words and Logo Sketches">
@@ -406,10 +431,10 @@
                        <h3 id="center">Preference Testing</h3>
                        <p>Variations of features were tested with Usability Hub for feedback to make design decisions.</p>
 
-                       <img src="images/preferencetestbutton1.jpg" alt="Button Options">
+                       <img src="images/preferencetestbutton.png" alt="Button Options">
                        <p>There were a few ideas for the buttons to add page content. Icon buttons were favored overall, however participants were split between the word button options. Another test could be done icons and individual word buttons.</p>
 
-                       <img src="images/preferencetestdashboard1.jpg" alt="Dashboard Options">
+                       <img src="images/preferencetestdashboard.png" alt="Dashboard Options">
                        <p>A preference test was given to decide whether to back the dashboard book text with white, to boost readability. Since the white somewhat blocked the descriptive photo, results were split. In the end I compromised to use with white backing at a reduce opacity.</p>
                    </div>
 
@@ -417,10 +442,10 @@
                        <h3 id="center">User Testing</h3>
                        <p>Testing to gage usability was done using the clickable prototype. The users tested the site for signing up for an account, adding a piece of content and organizing content. In addition, users were encouraged to go through the site. </p>
 
-                      <img src="images/usertestingleftmenu1.jpg" alt="Left Menu Change">
+                      <img src="images/usertestingleftmenu.png" alt="Left Menu Change">
                       <p>After a round of user testing, it seemed the New Book option on the left menu was redundant, also there was no direct way to the key component of the Collaboration page. This resulted in the removal of the New Book link and added direct link for Collaboration.</p>
 
-                      <img src="images/usertestingmoreoptionmenu.jpg" alt="More Options Menus">
+                      <img src="images/usertestingmoreoptionsmenu.png" alt="More Options Menus">
                       <p>As users went through the pages, it was apparent that not all pages had ways to organize or edit content, so a need to add more option menus.</p>
 
                    </div>
@@ -437,11 +462,11 @@
          <footer>
            <h2 id="connect">Let's Connect</h2>
              <ul id="social">
-               <li> <a href="mailto:bonniegabrielson@gmail.com"><img src="images/email.png" width="33" height="26" title="Email" alt="Email"></a> </li>
-               <li> <a href="https://www.linkedin.com/in/bonniegabrielson/"><img src="images/linkedin-logo.png" width="28" height="28" title="LinkedIn" alt="LinkedIn"></a> </li>
-               <li> <a href="https://github.com/bonnie234"><img src="images/github-logo.png" width="28" height="28" title="GitHub" alt="GitHub"></a> </li>
-               <li> <a href="https://twitter.com/uxbonnie234"><img src="images/twitter-brands.png" width="32" height="25" title="Twitter" alt="Twitter"></a> </li>
-               <li> <a href="https://www.facebook.com/bgabrielson"><img src="images/facebook-square-brands.png" width="28" height="28" title="Facebook" alt="Facebook"></a> </li>
+               <li> <a href="mailto:bonniegabrielson@gmail.com" target="_blank"><img src="images/email.png" width="33" height="26" title="Email" alt="Email"></a> </li>
+               <li> <a href="https://www.linkedin.com/in/bonniegabrielson/" target="_blank"><img src="images/linkedin-logo.png" width="28" height="28" title="LinkedIn" alt="LinkedIn"></a> </li>
+               <li> <a href="https://github.com/bonnie234" target="_blank"><img src="images/github-logo.png" width="28" height="28" title="GitHub" alt="GitHub"></a> </li>
+               <li> <a href="https://twitter.com/uxbonnie234" target="_blank"><img src="images/twitter-brands.png" width="32" height="25" title="Twitter" alt="Twitter"></a> </li>
+               <li> <a href="https://www.facebook.com/bgabrielson" target="_blank"><img src="images/facebook-square-brands.png" width="28" height="28" title="Facebook" alt="Facebook"></a> </li>
              </ul>
          </footer>
        </div>
@@ -454,7 +479,7 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  
+
   gtag('config', 'UA-140502335-1');
 </script>
 
