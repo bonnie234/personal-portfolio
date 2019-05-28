@@ -77,7 +77,7 @@ header {
   width: 100%;
 }
 
-.nav {
+/*.nav {
     grid-area: nav;
     text-align: center;
     margin-bottom: 1.3rem;
@@ -97,48 +97,10 @@ header {
 
 ul#top-navigation li{
   display: inline-block;
-}
-
-.logoname {
-  align-items: center;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: [logo] 30% [name] 70%;
-  grid-template-rows: [row1-start] 4rem [row1-end] 4rem;
-}
-
-.logo {
-  text-align: right;
-  border-right: 1px solid #B9C7D1;
-  margin: 2rem 4rem 2rem 4rem;
-  padding-top: 2rem;
-  padding-right: 4.5rem;
-  /*grid-area: logo;*/
-  grid-column: 1;
-  grid-row: 1 / 2;
-  height:  8.5rem;
-  min-width: 8.5rem;
-}
-
-.name {
-  align-items: center;
-  vertical-align: middle;
-  margin-left: 4rem;
-}
-
-.first {
-  grid-column: 2;
-  grid-row: 1;
-  padding-left: 4.5rem;
-  -webkit-text-stroke: .75px #000508;
-  -webkit-text-fill-color: white;
-  /*grid-area: first;*/
-}
-
-.last{
-  grid-column: 2;
-  grid-row: 2;
-/*  grid-area: last;*/
+}*/
+.main-nav li a.active-page
+{
+  border-bottom: .7rem solid #57BFAF;
 }
 
 .hero {
@@ -149,7 +111,7 @@ ul#top-navigation li{
     max-height: 23rem;
     max-width: 106rem;
     text-align: left;
-    margin: 0 auto;
+    margin: 10rem auto 0 auto;
     display: grid;
     height: 23rem;
     align-content: center;
@@ -265,31 +227,72 @@ a:hover
   font-weight: 700;
 }
 
+.logoname {
+  align-items: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [logo] 10% [name] 90%;
+  grid-template-rows: [row1-start] 2rem [row1-end] 2rem;
+}
 
-
-.Navbar {
-  background-color: #46ACC2;
-  display: flex;
-  padding: 16px;
-  font-family: sans-serif;
-  color: white;
-}
-.Navbar__Items {
-  display:flex;
-}
-.Navbar__Link {
-  padding-right: 8px;
-}
-.Navbar__Items--right {
-  margin-left:auto;
-}
-.Navbar__Link-toggle {
-  display: none;
+.logo {
+  text-align: center;
+  padding-top: 2rem;
+  grid-column: 1;
+  grid-row: 1;
+  height:  8.5rem;
+  min-width: 8.5rem;
+  margin-top: 10px;
 }
 
 
+.name {
+  align-items: center;
+  vertical-align: middle;
+
+}
+
+.first {
+  grid-column: 2;
+  grid-row: 1;
+  padding-left: 2rem;
+  -webkit-text-stroke: .75px #000508;
+  -webkit-text-fill-color: white;
+
+}
+
+.last{
+  grid-column: 2;
+  grid-row: 1;
+
+}
 
 
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #000508;
+    font-size: 2.4rem;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.active {
+  display: block;
+}
 
 .container {
   margin: 0 auto;
@@ -439,6 +442,8 @@ section p {
   border-length: 50px;
 }
 
+
+
 #inspiration{
   padding-bottom: 10rem;
 }
@@ -557,6 +562,8 @@ section p {
   max-width: 100%;
 }
 
+
+
 .slidehi{
     margin-bottom: 10rem;
 }
@@ -569,6 +576,15 @@ section p {
  margin: 0 0 10rem 0;
 }
 
+#wireframetesting {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #B9C7D1;
+}
+
+.wireframetesting {
+  margin: 5rem 1rem;
+}
 
 .testline {
      border-top: 1px solid #B9C7D1;
@@ -589,7 +605,14 @@ section p {
   opacity: 0.9;
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
-
+b {
+  font-weight: bold;
+  color: #D2474B;
+}
+mark {
+  background-color: #FFEEEE;
+  color: #0D0A1E;
+}
 .about1 p {
   margin: 0 5%;
   font-weight: 400;
@@ -659,17 +682,13 @@ section p {
 @media screen and (max-width:59rem){
 
   .logoname {
-    margin: 7rem auto;
+    margin: 1rem auto;
   }
 
  .name{
-    padding-bottom: 3rem;
-    padding-left: 1rem;
+    display: none;
  }
 
-  .last {
-     padding-left: 1rem;
-  }
 
   .hero-text{
     vertical-align: middle;
@@ -716,13 +735,15 @@ section p {
 @media screen and (min-width:60rem){
 
   .logoname {
-    margin: 13rem auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: row;
   }
 
 .logo {
-    margin: 2rem 0 2rem 4rem;
+    margin: auto 0;
+    border-right: 1px solid #B9C7D1;
+
 }
 
   .name {
@@ -730,9 +751,13 @@ section p {
     float: left;
   }
 
-  .last {
-    float: left;
+  .name h1 {
+    font-size: 3rem;
   }
+
+.hero {
+  margin-top: 15rem;
+}
 
   .hero-text {
     padding-left: 18rem;
@@ -756,7 +781,7 @@ section p {
     padding-top: 18rem;
 }
 
-.logoname {
+/*.logoname {
   grid-template-columns: 3fr, 3fr, 3fr;
   grid-template-areas:
   ". logo . ."
@@ -769,7 +794,7 @@ section p {
   grid-template-areas:
   "bonpic . "
   ". hero-text";
-}
+}*/
 
 .container {
    width: 100%;
@@ -778,6 +803,10 @@ section p {
 
  .sectionbox {
      margin: 0 10%;
+ }
+
+ .wireframetesting {
+   margin: 5rem 10% 15rem 10%;
  }
 
  #headerimage {
@@ -961,28 +990,48 @@ section p {
             margin: auto;
             width: 40%;
           }
-
-
 }
 
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-  .Navbar__Items {
-    display:none;
-  }
-  .Navbar__Items--right {
-    margin-left:0;
-  }
-  .Navbar__Link-toggle {
-  align-self: flex-end;
-  display: initial;
-  position: absolute;
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: auto 0;
+        padding-top: 9%;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: #57BFAF;
+    }
+
+  #js-menu ul li.active-link>a{
+    border-bottom: 1px solid #57BFAF;
+    color: #000508;
+    padding-bottom:1px;
 }
-}
+
 @media screen and (min-width: 90rem) {
 
 .container {
@@ -997,7 +1046,7 @@ section p {
     margin-top: 19rem;
   }
 
-  .analysis
+  .analysis{
     margin-left: auto;
     margin-right: auto;
   }

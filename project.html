@@ -6,43 +6,49 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="styles/reset.css">
    <link rel="stylesheet" href="styles/main.css">
-   <link rel="stylesheet" href="styles/flex.css">
-   <link rel="stylesheet" href="styles/about.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
    <title> Portfolio | Bonnie  </title>
  </head>
  <body>
      <header>
 
 
-         <div class="Navbar">
-           <nav class="Navbar__Items">
-             <div class="Navbar__Link Navbar__Link-brand">
-               <a href="index.html">
-               <img src="images/logo.svg" alt="logo"/>
-               </a>
-             </div>
-             <div class="Navbar__Link first name">
-               <h1>Bonnie</h1>
-             </div>
-             <div class="Navbar__Link last name">
-               <h1>Gabrielson</h1>
-             </div>
-             <div class="Navbar__Link Navbar__Link-toggle">
-  <i class="fas fa-bars"></i>
-</div>
-             <div class="Navbar__Link">
-               Link
-             </div>
-           </nav>
-           <nav class="Navbar__Items Navbar__Items--right">
-             <div class="Navbar__Link">
-               Link
-             </div>
-             <div class="Navbar__Link">
-               Link
-             </div>
-           </nav>
-         </div>
+
+<nav class="navbar">
+  <span class="navbar-toggle" id="js-navbar-toggle">
+    <i class="fas fa-bars"></i>
+  </span>
+     <div class="logoname">
+       <div class="logo">
+         <a href="index.html">
+         <img src="images/logo.svg" alt="logo"/>
+         </a>
+       </div>
+       <div class="first name">
+         <h1>Bonnie</h1>
+       </div>
+       <div class="last name">
+         <h1>Gabrielson</h1>
+      </div>
+    </div>
+
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="index.html#nav-projects" class="nav-links active-page">Projects</a>
+            </li>
+            <li>
+                <a href="images/bonniegabrielson_resume.pdf" target="_blank" class="nav-links resume">Resume</a>
+            </li>
+            <li>
+                <a href="about.html" class="nav-links">About</a>
+            </li>
+        </ul>
+</nav>
+
+
 
 
 
@@ -363,6 +369,11 @@
                    <img src="images/digitalwireframe6.jpg" alt="Digital Wireframe Book">
                  </div>
                </div>
+             </div>
+             <div class="wireframetesting">
+               <h5 id="wireframetesting">Wireframe Testing:</h5>
+                 <p> Wirframe Testing: User testing for wireframes tested “Signing Up for an Account”, “Adding a Piece of Content”, Organizing a Piece of Content. The sign-up portion went smoothly for all, though there is protentional for more robust information gathering at this phase. Adding a piece of content test resulted in changing the wording from “Create” to “Add New Content;” I also needed clarity on wording for “Organizing” as opposed to “Arranging Files.” There was some difficulty conveying this task since it it meant to have some click and drag components. After testing, it was suggested to focus on a desktop version to cater to the features.</p>
+               </div>
             </section>
 
             <section>
@@ -382,7 +393,7 @@
 
                 <div class="column b h">
                    <h3>Typography</h3>
-                   <p>The goal for the font is to keep the general text readable and adaptable, while header adds an accent with a little personality.</p>
+                   <p>The goal for the main font is to keep the general text readable and adaptable. The header font adds an accent that conveys a bold, noticeable title with a little personality. </p>
                    <img src="images/fonts.jpg" alt="RECbook Font">
                 </div>
 
