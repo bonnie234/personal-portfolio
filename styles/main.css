@@ -340,25 +340,22 @@ a:hover
 }
 
 .protobuttons {
-  display: grid;
-  grid-template-columns: 2, 1fr;
+
 }
 
 #viewbutton1 {
-  text-align: right;
-  grid-column: 1;
-  margin: 10rem .5rem;
+  text-align: center;
+  margin: 5rem auto;
 }
 
 #viewbutton2 {
-  text-align: left;
-  grid-column: 2;
-  margin: 10rem .5rem;
+  text-align: center;
+  margin: 5rem auto;
 }
 
 .overview {
   max-width: 63rem;
-  margin: 10rem auto;
+  margin: 5rem auto;
   padding: 0 1rem;
   line-height: 2.2rem;
   text-align: left;
@@ -835,12 +832,29 @@ mark {
    margin: 10rem auto;
  }
 
- .viewbutton{
+ /*.viewbutton{
    margin: 45rem 0;
+ }*/
+
+ .protobuttons {
+   display: grid;
+   grid-template-columns: 2, 1fr;
+ }
+
+ #viewbutton1 {
+   text-align: right;
+   grid-column: 1;
+   margin: 10rem .5rem;
+ }
+
+ #viewbutton2 {
+   text-align: left;
+   grid-column: 2;
+   margin: 10rem .5rem;
  }
 
  .overview {
-   margin: 19rem auto;
+   margin: 10rem auto;
  }
 
  .probsol {
