@@ -909,8 +909,7 @@ mark {
    }
 
 .people {
- /*padding: 0 1.8rem;
- margin: auto 0;*/
+
    display: grid;
    margin-bottom: 8rem;
    padding: 5rem 0 0 0;
