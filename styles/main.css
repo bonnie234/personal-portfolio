@@ -62,10 +62,10 @@ html{
   font-size: 10px;
 }
 
-html, body {
+/*html, body {
     max-width: 100%;
     overflow-x: hidden;
-}
+}*/
 
 img {
   max-width: 100%;
@@ -77,12 +77,11 @@ header {
   width: 100%;
 }
 
-.nav {
+/*.nav {
     grid-area: nav;
     text-align: center;
     margin-bottom: 1.3rem;
 }
-
 .navbar-link {
   font: 1.6rem/150% "Muli", sans-serif;
   font-weight: 300;
@@ -90,55 +89,15 @@ header {
   padding: .5rem 2rem;
   text-decoration: none;
 }
-
 .home {
   border-bottom: .7rem solid #57BFAF;
 }
-
 ul#top-navigation li{
   display: inline-block;
-}
-
-.logoname {
-  align-items: center;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: [logo] 30% [name] 70%;
-  grid-template-rows: [row1-start] 4rem [row1-end] 4rem;
-}
-
-.logo {
-  text-align: right;
-  border-right: 1px solid #B9C7D1;
-  margin: 2rem 4rem 2rem 4rem;
-  padding-top: 2rem;
-  padding-right: 4.5rem;
-  /*grid-area: logo;*/
-  grid-column: 1;
-  grid-row: 1 / 2;
-  height:  8.5rem;
-  min-width: 8.5rem;
-}
-
-.name {
-  align-items: center;
-  vertical-align: middle;
-  margin-left: 4rem;
-}
-
-.first {
-  grid-column: 2;
-  grid-row: 1;
-  padding-left: 4.5rem;
-  -webkit-text-stroke: .75px #000508;
-  -webkit-text-fill-color: white;
-  /*grid-area: first;*/
-}
-
-.last{
-  grid-column: 2;
-  grid-row: 2;
-/*  grid-area: last;*/
+}*/
+.main-nav li a.active-page
+{
+  border-bottom: .7rem solid #57BFAF;
 }
 
 .hero {
@@ -149,7 +108,7 @@ ul#top-navigation li{
     max-height: 23rem;
     max-width: 106rem;
     text-align: left;
-    margin: 0 auto;
+    margin: 10rem auto 0 auto;
     display: grid;
     height: 23rem;
     align-content: center;
@@ -175,6 +134,7 @@ ul#top-navigation li{
     padding-top: 2rem;
   }
 
+
 .title {
     margin: 0 auto;
     font: 2.4rem/150% "Muli", sans-serif;
@@ -184,7 +144,18 @@ ul#top-navigation li{
 
   .mainprojects {
     text-align: center;
-    grid-area: mp;
+    /*grid-area: mp;*/
+  }
+
+  .mainprojects h2 a:hover {
+    color: inherit;
+    font-weight: inherit;
+  }
+
+  .mainprojects h2 a {
+    color: inherit;
+    vertical-align: top;
+    float: none;
   }
 
   .main {
@@ -230,7 +201,7 @@ ul#top-navigation li{
 }
 
 footer {
-  grid-area: footer;
+/*  grid-area: footer;*/
   border-top: 3px solid #B9C7D1;
   text-align: center;
   width: 100%;
@@ -252,6 +223,7 @@ ul#social li {
   color: #000508;
 }
 
+
 a
 {
   text-decoration: none;
@@ -265,135 +237,68 @@ a:hover
   font-weight: 700;
 }
 
-#menuToggle
-{
+.logoname {
+  align-items: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [logo] 10% [name] 90%;
+  grid-template-rows: [row1-start] 2rem [row1-end] 2rem;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 2rem;
+  grid-column: 1;
+  grid-row: 1;
+  height:  8.5rem;
+  min-width: 8.5rem;
+  margin-top: 10px;
+}
+
+
+.name {
+  align-items: center;
+  vertical-align: middle;
+}
+
+.first {
+  grid-column: 2;
+  grid-row: 1;
+  padding-left: 2rem;
+  -webkit-text-stroke: .75px #000508;
+  -webkit-text-fill-color: white;
+}
+
+.last{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+/*.navbar{
+     border-bottom: 3px solid #27222D;
+}*/
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #000508;
+    font-size: 2.4rem;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.active {
   display: block;
-  position: absolute;
-  top: 75px;
-  right: 75px;
-
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #000508;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #000508;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  height: auto;
-  margin: -100px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
-  right: -100px;
-  float: none;
-  /*display: none;*/
-
-  background: #F4F9FB;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 5px;
-  font-size: 22px;
-}
-
-/*
- * And let's fade it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: scale(1.0, 1.0);
-  opacity: 1;
 }
 
 .container {
@@ -419,10 +324,6 @@ a:hover
   grid-row: 2;
 }
 
-#headerimage {
-  margin: 10rem 0 2rem 0;
-}
-
 #projectitle {
   text-align: center;
   padding-top: 1rem;
@@ -435,14 +336,23 @@ a:hover
   display: block;
 }
 
-#viewbutton {
+.protobuttons {
+
+}
+
+#viewbutton1 {
   text-align: center;
-  margin: 10rem 0;
+  margin: 5rem auto;
+}
+
+#viewbutton2 {
+  text-align: center;
+  margin: 5rem auto;
 }
 
 .overview {
   max-width: 63rem;
-  margin: 10rem auto;
+  margin: 5rem auto;
   padding: 0 1rem;
   line-height: 2.2rem;
   text-align: left;
@@ -529,6 +439,7 @@ section p {
 
 .columncenter img {
   padding-bottom: 3rem;
+  margin: auto;
 }
 
 .column ul {
@@ -567,6 +478,13 @@ section p {
   padding: 5rem 0 0 0;
 }
 
+.link {
+  color: #57BFAF;
+  font: 1.6rem/150% "Muli", sans-serif;
+  font-weight: 500;
+  /*color: #000508;*/
+}
+
 .people p {
   padding: 0 0 0 0;
 }
@@ -600,7 +518,17 @@ section p {
 
 .tag{
     max-width: 37rem;
-    padding: 4rem 0 4rem 0;
+    padding: 2rem 0 0 0;
+  }
+
+.tag p{
+    font-style: italic;
+    background-color: #F8FAFC;
+}
+
+  .motivations {
+    max-width: 37rem;
+    padding: 2rem 0 2rem 0;
   }
 
   .checklist {
@@ -618,6 +546,16 @@ section p {
 .checklist img {
   width: 2rem;
   height: 2rem;
+}
+
+.userstories li{
+  list-style-type: square;
+  padding-bottom: .5rem;
+}
+
+.userstories {
+  margin-bottom: 5rem;
+  padding-left: 2rem;
 }
 
 #userflowbox {
@@ -650,15 +588,23 @@ section p {
  margin: 0 0 10rem 0;
 }
 
+#wireframetesting {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #B9C7D1;
+}
+
+.wireframetesting {
+  margin: 5rem 1rem;
+}
 
 .testline {
      border-top: 1px solid #B9C7D1;
 }
 
-
 .about {
   padding-bottom: 5rem;
-  margin-left: 4%;
+  margin-left: 10%;
 }
 
 .aboutpic1 {
@@ -672,6 +618,18 @@ section p {
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
+b {
+  font-weight: bold;
+  color: #D2474B;
+}
+mark {
+  background-color: #FFEEEE;
+  color: #0D0A1E;
+}
+
+strong {
+  font-weight: bold;
+}
 .about1 p {
   margin: 0 5%;
   font-weight: 400;
@@ -741,17 +699,13 @@ section p {
 @media screen and (max-width:59rem){
 
   .logoname {
-    margin: 7rem auto;
+    margin: 1rem auto;
   }
 
- .name{
-    padding-bottom: 3rem;
-    padding-left: 1rem;
+ .name {
+    display: none;
  }
 
-  .last {
-     padding-left: 1rem;
-  }
 
   .hero-text{
     vertical-align: middle;
@@ -798,13 +752,14 @@ section p {
 @media screen and (min-width:60rem){
 
   .logoname {
-    margin: 13rem auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: row;
   }
 
 .logo {
-    margin: 2rem 0 2rem 4rem;
+    margin: auto 0;
+    border-right: 1px solid #B9C7D1;
 }
 
   .name {
@@ -812,9 +767,13 @@ section p {
     float: left;
   }
 
-  .last {
-    float: left;
+  .name h1 {
+    font-size: 3rem;
   }
+
+.hero {
+  margin-top: 15rem;
+}
 
   .hero-text {
     padding-left: 18rem;
@@ -835,23 +794,22 @@ section p {
 }
 
 .mainprojects {
-    padding-top: 18rem;
+    padding-top: 9rem;
 }
 
-.logoname {
+/*.logoname {
   grid-template-columns: 3fr, 3fr, 3fr;
   grid-template-areas:
   ". logo . ."
   ". . first ."
     ". . . last";
 }
-
 .logoname {
   grid-template-columns: 2fr, 10fr;
   grid-template-areas:
   "bonpic . "
   ". hero-text";
-}
+}*/
 
 .container {
    width: 100%;
@@ -862,6 +820,10 @@ section p {
      margin: 0 10%;
  }
 
+ .wireframetesting {
+   margin: 5rem 10% 15rem 10%;
+ }
+
  #headerimage {
    background-image:url("images/recbookheaderlg.jpg");
    height: auto;
@@ -869,12 +831,29 @@ section p {
    margin: 10rem auto;
  }
 
- .viewbutton{
+ /*.viewbutton{
    margin: 45rem 0;
+ }*/
+
+ .protobuttons {
+   display: grid;
+   grid-template-columns: 2, 1fr;
+ }
+
+ #viewbutton1 {
+   text-align: right;
+   grid-column: 1;
+   margin: 10rem .5rem;
+ }
+
+ #viewbutton2 {
+   text-align: left;
+   grid-column: 2;
+   margin: 10rem .5rem;
  }
 
  .overview {
-   margin: 19rem auto;
+   margin: 10rem auto;
  }
 
  .probsol {
@@ -901,7 +880,6 @@ section p {
  }
 
  .analysis {
-
    margin-left: auto;
    margin-right: auto;
  }
@@ -911,7 +889,6 @@ section p {
      width: 33.3%;
      padding: 0 1.8rem;
    }
-
 
    .b {
      border-right: 1px solid #B9C7D1;
@@ -931,8 +908,7 @@ section p {
    }
 
 .people {
- /*padding: 0 1.8rem;
- margin: auto 0;*/
+
    display: grid;
    margin-bottom: 8rem;
    padding: 5rem 0 0 0;
@@ -969,6 +945,11 @@ section p {
  margin-right: -10%;
  margin-bottom: 8rem;
 }
+/*.slide {
+  display: flex;
+  max-width: auto;
+  overflow-x: hidden;
+}*/
 
 .digital {
  justify-content: center;
@@ -1022,22 +1003,77 @@ section p {
 }
 
           .about1 p {
-            margin: 0 18%;
+            margin: auto;
+            width: 40%;
           }
 
           .about2 p {
-            margin: 0 18%;
+            margin: auto;
+            width: 40%;
           }
 
           .about3 p {
-            margin: 0 18%;
+            margin: auto;
+            width: 40%;
           }
 
           .about4 p {
-            margin: 0 18%;
+            margin: auto;
+            width: 40%;
           }
 }
 
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: auto 0;
+        padding-top: 9%;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 1rem;
+    }
+
+    .logoname{
+      align-items: left;
+      margin: -1rem;
+    }
+
+    .name{
+      padding-top: 9%;
+    }
+
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: #57BFAF;
+    }
+
+  #js-menu ul li.active-link>a{
+    border-bottom: 1px solid #57BFAF;
+    color: #000508;
+    padding-bottom:1px;
+}
 
 @media screen and (min-width: 90rem) {
 
@@ -1053,7 +1089,7 @@ section p {
     margin-top: 19rem;
   }
 
-  .analysis
+  .analysis{
     margin-left: auto;
     margin-right: auto;
   }
@@ -1103,7 +1139,6 @@ section p {
     grid-row: 1;
     max-width: 158rem;
     max-height: auto;
-    border-left: 1px solid blue;
   }
 
 
