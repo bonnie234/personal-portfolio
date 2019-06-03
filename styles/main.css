@@ -82,7 +82,6 @@ header {
     text-align: center;
     margin-bottom: 1.3rem;
 }
-
 .navbar-link {
   font: 1.6rem/150% "Muli", sans-serif;
   font-weight: 300;
@@ -90,11 +89,9 @@ header {
   padding: .5rem 2rem;
   text-decoration: none;
 }
-
 .home {
   border-bottom: .7rem solid #57BFAF;
 }
-
 ul#top-navigation li{
   display: inline-block;
 }*/
@@ -630,6 +627,9 @@ mark {
   color: #0D0A1E;
 }
 
+strong {
+  font-weight: bold;
+}
 .about1 p {
   margin: 0 5%;
   font-weight: 400;
@@ -804,7 +804,6 @@ mark {
   ". . first ."
     ". . . last";
 }
-
 .logoname {
   grid-template-columns: 2fr, 10fr;
   grid-template-areas:
