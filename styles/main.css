@@ -336,9 +336,6 @@ a:hover
   display: block;
 }
 
-.protobuttons {
-
-}
 
 #viewbutton1 {
   text-align: center;
@@ -617,6 +614,7 @@ section p {
   opacity: 0.9;
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
+
 
 b {
   font-weight: bold;
@@ -1020,6 +1018,10 @@ strong {
           .about4 p {
             margin: auto;
             width: 40%;
+          }
+
+          .about h2{
+            margin: 0 auto;
           }
 }
 
