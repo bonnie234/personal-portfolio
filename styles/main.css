@@ -331,7 +331,7 @@ a:hover
 }
 
 #headerimage {
-  width: 80%;
+  width: 60%;
   margin: 10rem auto 2rem auto;
   display: block;
 }
@@ -368,6 +368,11 @@ ul {
 
 #overview1 {
   padding-right: .5rem;
+}
+
+.overview h5, .overview p {
+  display: inline;
+  vertical-align: top;
 }
 
 section {
@@ -628,6 +633,11 @@ mark {
 strong {
   font-weight: bold;
 }
+
+.aboutcontainer h2 {
+  text-align: center;
+}
+
 .about1 p {
   margin: 0 5%;
   font-weight: 400;
