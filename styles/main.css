@@ -564,6 +564,7 @@ section p {
   margin-bottom: 9rem;
 }
 
+
 .slide {
   display: flex;
   overflow-x: auto;
@@ -576,6 +577,7 @@ section p {
 
 .wireframes{
   max-width: 100%;
+  text-align: center;
 }
 
 .slidehi{
@@ -587,7 +589,9 @@ section p {
 }
 
 .paper{
- margin: 0 0 10rem 0;
+ /*margin: 0 0 10rem 0;*/
+ margin: 0 auto;
+
 }
 
 #wireframetesting {
@@ -916,7 +920,6 @@ strong {
    }
 
 .people {
-
    display: grid;
    margin-bottom: 8rem;
    padding: 5rem 0 0 0;
@@ -929,7 +932,7 @@ strong {
  margin: auto 0;
 }
 
-.a {
+/*.a {
  grid-column: 2;
  grid-row: 1;
  padding: auto 10%;
@@ -942,7 +945,7 @@ strong {
  grid-row: 1;
  max-width: 38rem;
  max-height: auto;
-}
+}*/
 
 .wireframes {
  margin-bottom: 12rem;
@@ -963,6 +966,11 @@ strong {
  justify-content: center;
  margin-top: 10rem;
 }
+.paper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 
 .inspiration {
  display: flex;
@@ -970,6 +978,8 @@ strong {
  justify-content: center;
  padding-bottom: 12rem;
  border-bottom: 1px solid #B9C7D1;
+ width: auto;
+ height: auto;
 }
 
 #inspiration {
@@ -986,6 +996,42 @@ strong {
  height: 65rem;
  margin: 16rem auto;
 }
+
+/*.version{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}*/
+
+.iteration{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rem 10rem;
+}
+
+.iteration img{
+  padding: .5rem .5rem;
+}
+
+.access{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+}
+
+.access img{
+  max-height: 30rem;
+  max-width: auto;
+}
+
+.testing{
+  padding: 5rem 1rem;
+}
+
+.testing img{
+  padding: 1rem 1rem;
+}
+
 
 .h {
  position: relative;
@@ -1004,7 +1050,7 @@ strong {
 
 .h img {
  position: absolute;
- bottom: 0;
+ /*bottom: 0;*/
  max-width: 90%;
  height: auto;
  text-align: center;
@@ -1087,7 +1133,7 @@ strong {
     padding-bottom:1px;
 }
 
-@media screen and (min-width: 90rem) {
+/*@media screen and (min-width: 90rem) {
 
 .container {
     width: 89rem;
@@ -1135,7 +1181,7 @@ strong {
     width: 119rem;
   }*/
 
-  .sectionbox{
+  /*.sectionbox{
       margin: 0 10%;
   }
 
@@ -1157,12 +1203,12 @@ strong {
 }
 
 
-@media screen and (min-width: 180rem) {
+/*@media screen and (min-width: 180rem) {
 
   /*.container {
     width: 179rem;*/
 
-  .sectionbox{
+  /*.sectionbox{
       margin: 0 10%;
   }
 
@@ -1178,6 +1224,6 @@ strong {
     grid-row: 1;
     max-width: 158rem;
     max-height: auto;
-  }
+  }*/
 
 }
