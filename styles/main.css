@@ -109,8 +109,13 @@ ul#top-navigation li{
     max-width: 106rem;*/
     text-align: left;
     margin: 10rem auto 0 auto;
+<<<<<<< HEAD
     /*height: 23rem;*/
     max-width: 100%;
+=======
+    display: grid;
+    height: 23rem;
+>>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
     align-content: center;
   }
 
@@ -597,6 +602,7 @@ section p {
  /*margin: 0 0 10rem 0;*/
  margin: 0 auto;
 
+<<<<<<< HEAD
 }
 
 #wireframetesting {
@@ -605,6 +611,16 @@ section p {
   border-top: 1px solid #B9C7D1;
 }
 
+=======
+}
+
+#wireframetesting {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #B9C7D1;
+}
+
+>>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
 .wireframetesting {
   margin: 5rem 1rem;
 }
@@ -1093,6 +1109,37 @@ strong {
         height: 70px;
         align-items: center;
     }
+<<<<<<< HEAD
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: auto 0;
+        padding-top: 9%;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 1rem;
+    }
+
+    .logoname{
+      align-items: left;
+      margin: -1rem;
+    }
+
+    .name{
+      padding-top: 9%;
+    }
+=======
 
     .main-nav {
         display: flex;
@@ -1137,6 +1184,23 @@ strong {
     padding-bottom:1px;
 }
 
+/*@media screen and (min-width: 90rem) {
+>>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
+
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: #57BFAF;
+    }
+
+  #js-menu ul li.active-link>a{
+    border-bottom: 1px solid #57BFAF;
+    color: #000508;
+    padding-bottom:1px;
+}
+
 @media screen and (min-width: 90rem) {
 .container {
   width: 100%;
@@ -1148,6 +1212,10 @@ strong {
   #headerimage {
     margin-top: 19rem;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
   .analysis{
     margin-left: auto;
     margin-right: auto;
@@ -1174,7 +1242,11 @@ strong {
     width: 119rem;
   }
 
+<<<<<<< HEAD
    .sectionbox{
+=======
+  /*.sectionbox{
+>>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
       margin: 0 10%;
   }
   .people {
@@ -1190,11 +1262,20 @@ strong {
     max-height: auto;
   }
 }
+<<<<<<< HEAD
 @media screen and (min-width: 180rem) {
   .container {
     width: 179rem;
+=======
 
-  .sectionbox{
+
+/*@media screen and (min-width: 180rem) {
+
+  /*.container {
+    width: 179rem;*/
+>>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
+
+  /*.sectionbox{
       margin: 0 10%;
   }
   .people {
@@ -1208,6 +1289,6 @@ strong {
     grid-row: 1;
     max-width: 158rem;
     max-height: auto;
-  }
+  }*/
 
 }
