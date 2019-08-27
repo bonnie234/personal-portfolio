@@ -136,10 +136,8 @@ ul#top-navigation li{
     grid-area: hero-text;
     grid-template-columns: 2;
     grid-auto-rows: 1;
-  
+
     border: .75rem solid #F05DBD;
-
-
   }
 
   .hero-text h3 {
@@ -630,8 +628,8 @@ section p {
 }
 
 .about {
-  padding-bottom: 5rem;
-  margin-left: 10%;
+  padding-bottom: 1rem;
+  /*margin-left: 10%;*/
 }
 
 .aboutpic1 {
@@ -1097,7 +1095,7 @@ strong {
           }
 
           .about h2{
-            margin: 0 auto;
+            margin: auto;
           }
 }
 
@@ -1139,7 +1137,6 @@ strong {
     .name{
       padding-top: 9%;
     }
-=======
 
     .main-nav {
         display: flex;
@@ -1242,7 +1239,6 @@ strong {
    .sectionbox{
 
   /*.sectionbox{
->>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
       margin: 0 10%;
   }
   .people {
