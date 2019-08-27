@@ -77,11 +77,12 @@ header {
   width: 100%;
 }
 
-/*.nav {
+.nav {
     grid-area: nav;
     text-align: center;
     margin-bottom: 1.3rem;
 }
+
 .navbar-link {
   font: 1.6rem/150% "Muli", sans-serif;
   font-weight: 300;
@@ -94,7 +95,7 @@ header {
 }
 ul#top-navigation li{
   display: inline-block;
-}*/
+}
 .main-nav li a.active-page
 {
   border-bottom: .7rem solid #57BFAF;
@@ -102,21 +103,19 @@ ul#top-navigation li{
 
 .hero {
     background: url(../images/loop.jpg);
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: 100%, 100%;
-    background-position: center;
+    /*background-position: center;*/
   /*  max-height: 23rem;
     max-width: 106rem;*/
     text-align: left;
-    margin: 10rem auto 0 auto;
-<<<<<<< HEAD
-    /*height: 23rem;*/
+    /*margin: 0 auto 0 auto;
+    height: 23rem;*/
     max-width: 100%;
-=======
     display: grid;
-    height: 23rem;
->>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
+    height: 70rem;
     align-content: center;
+    margin: -10rem, -10rem;
   }
 
 .bonpic {
@@ -124,9 +123,12 @@ ul#top-navigation li{
     display: inline-block;
   min-width: 25rem;
   height: 23rem;
+  opacity: 0.6;
 }
 
 .hero-text {
+  background: url(../images/bonnie.jpg);
+  background-repeat: no-repeat;
     max-width: 90rem;
     max-height: 23rem;
     padding-left: 13rem;
@@ -134,6 +136,9 @@ ul#top-navigation li{
     grid-area: hero-text;
     grid-template-columns: 2;
     grid-auto-rows: 1;
+  
+    border: .75rem solid #F05DBD;
+
 
   }
 
@@ -179,7 +184,7 @@ ul#top-navigation li{
   }
 
 .project1, .project2 {
-  background: url(../images/recbookheader3.jpg) contain;
+/*  background: url(../images/recbookheader3.jpg) contain;*/
   background-color: #F7FAFB;
   border-radius: .5rem .5rem .5rem .5rem;
   height: 23rem;
@@ -345,7 +350,6 @@ a:hover
   margin: 10rem auto 2rem auto;
   display: block;
 }
-
 
 #viewbutton1 {
   text-align: center;
@@ -601,8 +605,6 @@ section p {
 .paper{
  /*margin: 0 0 10rem 0;*/
  margin: 0 auto;
-
-<<<<<<< HEAD
 }
 
 #wireframetesting {
@@ -611,8 +613,6 @@ section p {
   border-top: 1px solid #B9C7D1;
 }
 
-=======
-}
 
 #wireframetesting {
   padding-top: 4rem;
@@ -620,7 +620,7 @@ section p {
   border-top: 1px solid #B9C7D1;
 }
 
->>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
+
 .wireframetesting {
   margin: 5rem 1rem;
 }
@@ -805,7 +805,7 @@ strong {
   }
 
 .hero {
-  margin-top: 15rem;
+/*  margin-top: 15rem;*/
 }
 
   .hero-text {
@@ -1109,7 +1109,7 @@ strong {
         height: 70px;
         align-items: center;
     }
-<<<<<<< HEAD
+
 
     .main-nav {
         display: flex;
@@ -1169,23 +1169,6 @@ strong {
     .name{
       padding-top: 9%;
     }
-
-   .navbar-toggle {
-       display: none;
-    }
-    .logo:hover,
-    .nav-links:hover {
-        color: #57BFAF;
-    }
-
-  #js-menu ul li.active-link>a{
-    border-bottom: 1px solid #57BFAF;
-    color: #000508;
-    padding-bottom:1px;
-}
-
-/*@media screen and (min-width: 90rem) {
->>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
 
    .navbar-toggle {
        display: none;
@@ -1202,6 +1185,23 @@ strong {
 }
 
 @media screen and (min-width: 90rem) {
+
+
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: #57BFAF;
+    }
+
+  #js-menu ul li.active-link>a{
+    border-bottom: 1px solid #57BFAF;
+    color: #000508;
+    padding-bottom:1px;
+}
+
+/*@media screen and (min-width: 90rem) {
 .container {
   width: 100%;
   /*  width: 89rem;*/
@@ -1212,10 +1212,7 @@ strong {
   #headerimage {
     margin-top: 19rem;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
   .analysis{
     margin-left: auto;
     margin-right: auto;
@@ -1242,9 +1239,8 @@ strong {
     width: 119rem;
   }
 
-<<<<<<< HEAD
    .sectionbox{
-=======
+
   /*.sectionbox{
 >>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
       margin: 0 10%;
@@ -1273,7 +1269,7 @@ strong {
 
   /*.container {
     width: 179rem;*/
->>>>>>> f91c9119f2cb2d9523b5b656a78a6c57efd99860
+
 
   /*.sectionbox{
       margin: 0 10%;
